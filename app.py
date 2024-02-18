@@ -3,18 +3,21 @@ import requests
 import csv
 import pandas as pd
 from io import StringIO
+from flask_cors import cross_origin
 
 app = Flask(__name__)
 
 
 
 @app.route('/is-parked', methods=['POST'])
+@cross_origin()
 def parked_app():
     data = request.json
     is_failure = str(update_csv_route( data["address-1"], data["address-2"]))
     return str(is_failure)
 
 @app.route('/availability', methods=['POST'])
+@cross_origin()
 def available_app():
     data = request.json
     available = str(searchFunctionAddress( data["address-1"], data["address-2"]))
