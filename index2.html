@@ -12,17 +12,12 @@
         // Intialize our map
         var center = new google.maps.LatLng(51.049999, -114.066666);
         var mapOptions = {
-        zoom: 8,
+        zoom: 12,
         center: center
         }
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-        let myLatLng = { lat: my_lat, lng: long};
-                    new google.maps.Marker({
-                    position: myLatLng,
-                    map,
-                    title: name,
-                    });
+        
 
         // Retrieve our data and plot it
 
@@ -61,8 +56,8 @@
                 return response.json()})
                 .then(function(data){ 
                     try{
-                    let my_lat= data.results[0].geometry.viewport.northeast.lat;
-                    let long = data.results[0].geometry.viewport.northeast.lng;
+                    let my_lat= data.results[0].geometry.location.lat;
+                    let long = data.results[0].geometry.location.lng;
                     let name = data.results[0].formatted_address;
 
                     my_lat= Number.parseFloat(my_lat);
@@ -74,7 +69,7 @@
                     map,
                     title: name,
                     });
-                    
+
                     }
                     catch (error){
                         console.error(error);
@@ -100,3 +95,8 @@
     <div id="map"></div>
 </body>
 </html>
+
+<!--getPosition() returns LatLng object 
+info window to display availability / 
+or use title  to search by address 1 and address 2 column
+format -->
