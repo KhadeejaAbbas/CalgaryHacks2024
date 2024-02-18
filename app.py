@@ -3,25 +3,28 @@ import requests
 import csv
 import pandas as pd
 from io import StringIO
+from flask_cors import cross_origin
 
 app = Flask(__name__)
 
 
 
 @app.route('/is-parked', methods=['POST'])
+@cross_origin()
 def parked_app():
     data = request.json
     is_failure = str(update_csv_route( data["address-1"], data["address-2"]))
     return str(is_failure)
 
 @app.route('/availability', methods=['POST'])
+@cross_origin()
 def available_app():
     data = request.json
-    available = str(searchFunctionAddress( data["address-1"], data["address-2"]))
+    available = searchFunctionAddress( data["column_1"], data["column_1"])
     return available 
 
 def decrement_spot(street_name):
-    with open('parking_data.csv', 'r', newline='') as file:
+    with open('Dataset_for_map_app_divided.csv', 'r', newline='') as file:
         reader = csv.DictReader(file)
         rows = list(reader)
 
@@ -35,6 +38,17 @@ def decrement_spot(street_name):
         writer = csv.DictWriter(file, fieldnames=reader.fieldnames)
         writer.writeheader()
         writer.writerows(rows)
+
+
+def get_spot(street_name):
+    with open('Dataset_for_map_app_divided.csv', 'r', newline='') as file:
+        reader = csv.DictReader(file)
+        rows = list(reader)
+
+    for row in rows:
+        if row['Street'] == street_name:
+            available_spots = int(row['Available Spots'])
+            return available_spots
 
 
 file_url = 'https://raw.githubusercontent.com/KhadeejaAbbas/CalgaryHacks2024/main/Dataset_for_map_app_divided.csv?token=GHSAT0AAAAAACN7XUSWBCKNO6ERCL3JOKJ2ZORXXVQ'  # URL of the CSV file on GitHub
@@ -87,7 +101,8 @@ def searchFunctionAddress(column1_value, column2_value):
     matching_rows = df[(df[column1_name] == column1_value) & (df[column2_name] == column2_value)]
     column_name = "number_of_spots_left"
     result_values = matching_rows[column_name].tolist()
-    return result_values
+    value = ",".join(str(element) for element in result_values)
+    return value
 
 if __name__ == '__main__':
     app.run(debug=True)

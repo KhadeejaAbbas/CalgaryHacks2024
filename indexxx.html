@@ -114,8 +114,14 @@
 
                     marker.addListener("click", () => {
                             infoWindow.close();
-                            let availability = storeAddress(marker);
-                            infoWindow.setContent("<p>Availability is 5</p>");
+                            let address = marker.getTitle();
+                            //set address slected 
+                            let out_address = document.querySelector(".street-name");
+                            out_address.innerHTML = address;
+                            //get available parking spots 
+                            addresss = address.split(", ");
+                            available = getAvailability(address[0], address[1]); 
+                            infoWindow.setContent(`Available ${available}`);
                             infoWindow.open(marker.getMap(), marker);
                             });
 
@@ -135,19 +141,9 @@
 
             };
 
-        //This function will get the address or lat/long of marker that user clicked on. 
-        //We can collect address or long/lat, search csv, then get availability. 
-        function storeAddress(marker){
-            let address = marker.getTitle();
-            //set address slected 
-            let out_address = document.querySelector(".parking-amount");
-            out_address.style.textContent = address;
-            //get available parking spots 
-            addresss = address.split(", ");
-            getAvailability(address[0], address[1]);  
-        }
-
-        function getAvailability(column_1, column_2) { 
+        
+        function getAvailability(column_1, column_2) {
+            var value;  
             fetch('http://127.0.0.1:5000/availability', {
                 method: 'POST',
                 body: JSON.stringify({ "column_1": column_1, "column_2": column_2}),
@@ -161,13 +157,17 @@
                     }
                     return response.text()})
                 .then(function(data){ 
+                    
                     //If book is available make the border around the book image green, if not make it red  
                     let out_address = document.querySelector(".parking-amount");
-                    out_address.style.textContent = data;
+                    console.log(data);
+                    out_address.innerHTML = data;
+                    return value;
                     })
                 .catch(error => {
                 console.error('Error:', error);
                 });
+                
             }
 
                      
@@ -185,7 +185,7 @@
         <input type="text" id="searchInput" class="search-bar" placeholder="Search for a street...">
         <div id="streetList">
             <div id="4 Street SW">
-                Street Name<span class="street-name"></span>: <span class="parking-amount"></span> spots available
+                Street Name: <span class="street-name"></span><span class="parking-amount"></span> spots available
             </div>
             <!-- Add more streets and parking information as needed -->
         </ul>

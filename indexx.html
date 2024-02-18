@@ -155,8 +155,14 @@
 
                     marker.addListener("click", () => {
                             infoWindow.close();
-                            let availability = storeAddress(marker);
-                            infoWindow.setContent("<p>Availability is 5</p>");
+                            let address = marker.getTitle();
+                            //set address slected 
+                            let out_address = document.querySelector(".street-name");
+                            out_address.innerHTML = address;
+                            //get available parking spots 
+                            addresss = address.split(", ");
+                            available = getAvailability(address[0], address[1]); 
+                            infoWindow.setContent(`Available ${available}`);
                             infoWindow.open(marker.getMap(), marker);
                             });
 
@@ -176,16 +182,35 @@
 
             };
 
-        //This function will get the address or lat/long of marker that user clicked on. 
-        //We can collect address or long/lat, search csv, then get availability. 
-        function storeAddress(marker){
-            let address = marker.getTitle();
-            // call Maheen's function to show address and check in /checkout
-
-            // call Ayesha's function to get availability 
-        }
-
         
+        function getAvailability(column_1, column_2) {
+            var value;  
+            fetch('http://127.0.0.1:5000/availability', {
+                method: 'POST',
+                body: JSON.stringify({ "column_1": column_1, "column_2": column_2}),
+                headers: {
+                'Content-Type': 'application/json'
+                }
+                })
+                .then(function(response){
+                    if (!response.ok) {
+                        throw new Error(`HTTP error: ${response.status}`);
+                    }
+                    return response.text()})
+                .then(function(data){ 
+                    
+                    //If book is available make the border around the book image green, if not make it red  
+                    let out_address = document.querySelector(".parking-amount");
+                    console.log(data);
+                    out_address.innerHTML = data;
+                    return value;
+                    })
+                .catch(error => {
+                console.error('Error:', error);
+                });
+                
+            }
+
             </script>
      <script defer
      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk&callback=initMap">
@@ -202,7 +227,7 @@
 
         <div id="streetList">
             <div id="4 Street SW">
-                Street Name<span class="street-name"></span>: <span class="parking-amount"></span> spots available
+                Street Name: <span class="street-name"></span><span class="parking-amount"></span> spots available
             </div>
             <!-- Add more streets and parking information as needed -->
         <!-- <ul id="streetList">
@@ -219,9 +244,9 @@
         <!-- </ul> --> 
     <!-- </div> -->
     </div>
-  <!--  <script>
-        // JavaScript for search functionality
-        const searchInput = document.getElementById('searchInput');
+  <script>
+    // JavaScript for search functionality
+      /*  const searchInput = document.getElementById('searchInput');
         const streetList = document.getElementById('streetList').getElementsByTagName('li');
         const checkInButton = document.getElementById('checkInButton');
 
@@ -235,28 +260,40 @@
                     streetList[i].style.display = 'none';
                 }
             }
-        });
-        checkInButton.addEventListener('click', function() {
-            const Street4 = document.getElementById('4 Street SW');
-            if (Street4) {
-                const Street4Parking = Street4.getElementsByClassName('parking-amount')[0];
-                let availableSpots = parseInt(Street4Parking.textContent);
-                if (availableSpots > 0) {
-                    availableSpots--;
-                    Street4Parking.textContent = availableSpots;
-                    alert('You have successfully checked into the parking lot on 4 Street SW!');
-
+        });*/
+            function setAvailability(column_1, column_2) { 
+            fetch('http://127.0.0.1:5000/is-parked', {
+                method: 'POST',
+                body: JSON.stringify({ "column_1": column_1, "column_2": column_2}),
+                headers: {
+                'Content-Type': 'application/json'
                 }
-                else {
-             // Visual feedback: Display an error message if no spots available
-            alert('Sorry, there are no available spots on 4 Street SW.');
-        }
+                })
+                .then(function(response){
+                    if (!response.ok) {
+                        throw new Error(`HTTP error: ${response.status}`);
+                    }
+                    return response.text()})
+                .then(function(data){ 
+                    //If book is available make the border around the book image green, if not make it red  
+                    if (data == "500"){
+                        console.error("csv failed");
+                    }
+                    })
+                .catch(error => {
+                console.error('Error:', error);
+                });
             }
 
-            // Add similar logic for other streets as needed
+        checkInButton.addEventListener('click', function() {
+            const Street = document.getElementById('.street-name');
+            let text = Street.textContent;
+            text = text.split(", ");
+            setAvailability(text[0], text[1]);
         });
+        
     </script>
-    -->
+    
     <script src="scriptt.js"></script>
 </body>
 </html>
