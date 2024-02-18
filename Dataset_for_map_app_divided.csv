@@ -1,0 +1,521 @@
+new_column,PARKING_ZONE,STALL_TYPE,BLOCK_SIDE,PERMIT_ZONE,PRICE_ZONE,ENFORCEABLE_TIME,MAX_TIME,PARKING_RESTRICT_TYPE,BRZ_NAME,First_address,Second_address,First_address_Second_address,availability,number_of_spots_left
+1,3329,Parallel,N,3329,9,0910-1750 MON-FRI,120,AM,Beltline,12 Av SW ,8 St SW ,12 Av SW  &  8 St SW ,5,5
+2,1448,Parallel,S,1448,7,0910-1750 MON-FRI,180,none,Downtown,4 Av SW ,10 St SW ,4 Av SW  &  10 St SW ,5,5
+3,2891,Parallel,N,2891,8,0910-1520 MON-FRI,120,PM,,10 Av SW ,12 St SW ,10 Av SW  &  12 St SW ,5,5
+6,5299,Parallel,N,5299,20,"1110-1320 MON-FRI, 0910-1750 SAT",120,AM,Inglewood,9 Av SE ,11 St SE ,9 Av SE  &  11 St SE ,5,5
+7,5310,Parallel,N,5310,20,"1110-1320 MON-FRI, 0910-1750 SAT",120,AM,Inglewood,9 Av SE ,12 St SE ,9 Av SE  &  12 St SE ,5,5
+10,4642,Parallel,W,4642,13,"0910-1520 MON-FRI, 0910-1750 SAT",60,PM,4 Street SW,4 St SW ,17 Av SW ,4 St SW  &  17 Av SW ,5,5
+11,2399,Parallel,N,2399,6,0910-1750 MON-FRI,120,AM,Downtown,9 Av SW ,8 St SW ,9 Av SW  &  8 St SW ,5,5
+12,2385,Parallel,N,2385,7,0910-1750 MON-FRI,120,AM,Downtown,9 Av SW ,9 St SW ,9 Av SW  &  9 St SW ,5,5
+14,2927,Parallel,N,2927,12,0910-1750 MON-FRI,120,none,Beltline,10 Av SW ,2 St SW ,10 Av SW  &  2 St SW ,5,5
+18,3600,Parallel,S,3600,9,0910-1750 MON-FRI,120,AM,Beltline,12 Av SW ,7 St SW ,12 Av SW  &  7 St SW ,5,5
+19,3626,Parallel,S,3626,9,0910-1750 MON-FRI,120,AM,,12 Av SW ,5 St SW ,12 Av SW  &  5 St SW ,5,5
+20,5383,Parallel,E,5383,20,"1110-1320 MON-FRI, 0910-1750 SAT",120,AM,Inglewood,9 Av SE ,9 St SE ,9 Av SE  &  9 St SE ,5,5
+22,2763,Parallel,N,2763,18,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,2 Av NW ,9A St NW ,2 Av NW  &  9A St NW ,5,5
+23,3113,Parallel,N,3113,12,0910-1520 MON-FRI,60,PM,Beltline,11 Av SW ,4 St Sw ,11 Av SW  &  4 St Sw ,5,5
+24,5303,Parallel,W,5303,20,"1140-1520 MON-FRI, 0910-1750 SAT",120,none,Inglewood,11 St SE ,8 Av SE ,11 St SE  &  8 Av SE ,5,5
+25,5402,Parallel,S,5402,20,"1140-1520 MON-FRI, 0910-1750 SAT",120,none,Inglewood,10 Av SE ,10 St SE ,10 Av SE  &  10 St SE ,5,5
+26,2271,Parallel,W,2271,4c,0910-1750 MON-SAT,120,none,Downtown,Centre St S ,7 Av SW ,Centre St S  &  7 Av SW ,5,5
+27,1020,Parallel,E,1020,5,0910-1750 MON-SAT,120,none,Chinatown,2 St SW ,Riverfront Av SW ,2 St SW  &  Riverfront Av SW ,5,5
+29,4666,Parallel,S,4666,13,0910-1750 MON-SAT,180,AM,,17 Av SW ,1 St SW ,17 Av SW  &  1 St SW ,5,5
+30,5370,Parallel,N,5370,23,0910-1750 MON-SAT,540,none,,8 Av NW ,10 St NW ,8 Av NW  &  10 St NW ,5,5
+31,1870,Parallel,E,1870,1,0910-1750 MON-FRI,240,none,,4 St SE ,5 Av SE ,4 St SE  &  5 Av SE ,5,5
+34,1515,Parallel,S,1515,4b,0910-1750 MON-FRI,120,none,Downtown,4 Av SW ,5 St SW ,4 Av SW  &  5 St SW ,5,5
+36,3319,Parallel,E,3319,8,0910-1750 MON-SAT,540,none,,10 St SW ,11 Av SW ,10 St SW  &  11 Av SW ,5,5
+38,1745,Parallel,E,1745,4b,0910-1750 MON-FRI,120,none,Downtown,5 St SW ,5 Av SW ,5 St SW  &  5 Av SW ,5,5
+39,2108,Parallel,E,2108,1,0910-1750 MON-FRI,240,none,,4 St SE ,6 Av SE ,4 St SE  &  6 Av SE ,5,5
+40,1652,Parallel,S,1652,7,0910-1750 MON-SAT,180,AM&PM,Downtown,5 Av SW ,10 St SW ,5 Av SW  &  10 St SW ,5,5
+41,5566,Parallel,S,5566,25,0910-1750 MON-SAT,120,none,,49 Av SW,  6 St SW ,49 Av SW &    6 St SW ,5,5
+44,3136,Parallel,S,3136,12,0910-1750 MON-FRI,120,AM,Victoria Park,10 Av SW ,1 St Sw ,10 Av SW  &  1 St Sw ,5,5
+45,4371,Parallel,N,4371,11,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,Uptown 17,17 Av SW ,12 St SW ,17 Av SW  &  12 St SW ,5,5
+46,4607,Parallel,S,4607,11,0910-1750 MON-SAT,120,AM,Uptown 17,17 Av SW ,8 St SW ,17 Av SW  &  8 St SW ,5,5
+47,4572,Parallel,S,4572,11,0910-1750 MON-SAT,120,AM,Uptown 17,17 Av SW ,11 St SW ,17 Av SW  &  11 St SW ,5,5
+48,2931,Parallel,N,2931,12,0910-1750 MON-FRI,120,none,Victoria Park,10 Av SW ,1 St SW ,10 Av SW  &  1 St SW ,5,5
+49,2467,Parallel,W,2467,4c,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,3 St SW ,8 Av SW ,3 St SW  &  8 Av SW ,5,5
+50,1603,Parallel,W,1604,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,1 St SE ,3 Av SE ,1 St SE  &  3 Av SE ,5,5
+51,1211,Parallel,E,1211,5,0910-1750 MON-SAT,120,none,Downtown,4 St SW ,2 Av SW ,4 St SW  &  2 Av SW ,5,5
+52,1225,Parallel,E,1225,5,0910-1750 MON-SAT,120,none,Downtown,3 St SW ,2 Av SW ,3 St SW  &  2 Av SW ,5,5
+54,2412,Parallel,W,2412,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,7 St SW ,8 Av SW ,7 St SW  &  8 Av SW ,5,5
+55,2368,Parallel,W,2368,7,0910-1750 MON-FRI,180,none,Downtown,10 St SW ,8 Av SW ,10 St SW  &  8 Av SW ,5,5
+57,1162,Angle,W,1162,5,0910-1750 MON-SAT,180,none,Downtown,6 St SW ,2 Av SW ,6 St SW  &  2 Av SW ,5,5
+59,5295,Parallel,N,5295,20,"1140-1520 MON-FRI, 0910-1750 SAT",120,none,Inglewood,8 Av SE ,11 St SE ,8 Av SE  &  11 St SE ,5,5
+60,3162,Parallel,S,3162,14,0910-1750 MON-FRI,120,none,,10 Av SE ,Centre St S ,10 Av SE  &  Centre St S ,5,5
+64,2034,Parallel,W,2034,4a,0910-1750 MON-SAT,120,none,Downtown,Centre St S ,6 Av SE ,Centre St S  &  6 Av SE ,5,5
+65,2508,Parallel,W,2508,4c,0910-1750 MON-SAT,120,none,Downtown,Centre St S ,8 Av SW ,Centre St S  &  8 Av SW ,5,5
+66,5400,Parallel,W,5400,20,"1140-1520 MON-FRI, 0910-1750 SAT",120,none,Inglewood,10 St SE ,9 Av SE ,10 St SE  &  9 Av SE ,5,5
+67,3420,Parallel,S,3420,14,0910-1750 MON-FRI,120,none,Victoria Park,11 Av SW ,1 St SW ,11 Av SW  &  1 St SW ,5,5
+69,5390,Parallel,W,5390,20,"1140-1520 MON-FRI, 0910-1750 SAT",120,none,Inglewood,11 St SE ,9 Av SE ,11 St SE  &  9 Av SE ,5,5
+70,1316,Parallel,E,1316,6,0910-1750 MON-FRI,180,none,Downtown,7 St SW ,3 Av SW ,7 St SW  &  3 Av SW ,5,5
+74,4278,Parallel,W,4278,11,0910-1750 MON-SAT,120,none,,11 St SW ,15 Av SW ,11 St SW  &  15 Av SW ,5,5
+75,1466,Parallel,N,1466,7,0910-1520 MON-FRI,120,AM&PM,Downtown,5 Av SW ,9 St SW ,5 Av SW  &  9 St SW ,5,5
+77,1659,Parallel,N,1659,7,0910-1520 MON-FRI,120,AM&PM,Downtown,6 Av SW ,10 St SW ,6 Av SW  &  10 St SW ,5,5
+80,1165,Parallel,N,1165,6,0910-1750 MON-FRI,180,none,Downtown,3 Av SW ,6 St SW ,3 Av SW  &  6 St SW ,5,5
+83,3173,Parallel,S,3173,14,0910-1750 MON-FRI,120,none,Victoria Park,10 Av SE ,1 St SE ,10 Av SE  &  1 St SE ,5,5
+85,3181,Parallel,S,3181,14,0910-1750 MON-FRI,120,none,Victoria Park,10 Av SE ,MacLeod ,10 Av SE  &  MacLeod ,5,5
+86,3008,Parallel,S,3008,8,0910-1750 MON-FRI,180,none,,10 Av SW ,11 St Sw ,10 Av SW  &  11 St Sw ,5,5
+92,3704,Parallel,E,3704,14,0910-1750 MON-FRI,180,none,Victoria Park,Centre St S ,12 Av SE ,Centre St S  &  12 Av SE ,5,5
+93,4413,Parallel,N,4413,11,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,Uptown 17,17 Av SW ,9 St SW ,17 Av SW  &  9 St SW ,5,5
+94,3190,Parallel,N,3190,14,0910-1750 MON-FRI,240,none,Victoria Park,11 Av SE ,3 St SE ,11 Av SE  &  3 St SE ,5,5
+95,5050,Parallel,N,5050,22,"1110-1520 MON-FRI, 0910-1750 SAT",540,none,,14 Av NW ,Centre St N ,14 Av NW  &  Centre St N ,5,5
+96,1080,Angle,E,1080,5,0910-1750 MON-SAT,120,none,Downtown,4 St SW ,Eau Claire Av SW ,4 St SW  &  Eau Claire Av SW ,5,5
+97,5038,Parallel,S,5038,22,"1110-1520 MON-FRI, 0910-1750 SAT",540,none,,15 Av NW ,1 St NW ,15 Av NW  &  1 St NW ,5,5
+98,4965,Parallel,E,4965,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,9 Av NE ,Centre St N  &  9 Av NE ,5,5
+99,3673,Parallel,W,3673,12,0910-1750 MON-FRI,120,none,First Street,1 St SW ,12 Av SW ,1 St SW  &  12 Av SW ,5,5
+100,4962,Parallel,N,4962,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,none,Crescent Heights Village,9 Av NE ,1 St NE ,9 Av NE  &  1 St NE ,5,5
+102,4950,Parallel,E,4950,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,8 Av NE ,Centre St N  &  8 Av NE ,5,5
+103,4989,Parallel,N,4989,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,none,Crescent Heights Village,11 Av NE ,1 St NE ,11 Av NE  &  1 St NE ,5,5
+104,4978,Parallel,E,4978,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,10 Av NE ,Centre St N  &  10 Av NE ,5,5
+106,3141,Parallel,N,3141,12,0910-1750 MON-FRI,120,PM,Victoria Park,11 Av SW ,1 St Sw ,11 Av SW  &  1 St Sw ,5,5
+109,3364,Parallel,S,3364,9,0910-1750 MON-FRI,120,none,Beltline,11 Av SW ,5 St SW ,11 Av SW  &  5 St SW ,5,5
+110,3393,Parallel,S,3393,12,0910-1750 MON-FRI,120,none,,11 Av SW ,2 St SW ,11 Av SW  &  2 St SW ,5,5
+114,3340,Parallel,W,3340,9,0910-1750 MON-FRI,120,none,Beltline,7 St SW ,11 Av SW ,7 St SW  &  11 Av SW ,5,5
+115,3380,Parallel,S,3380,12,0910-1750 MON-FRI,120,PM,,11 Av SW ,4 St SW ,11 Av SW  &  4 St SW ,5,5
+117,3354,Parallel,W,3354,9,0910-1750 MON-FRI,120,none,Beltline,6 St SW ,11 Av SW ,6 St SW  &  11 Av SW ,5,5
+119,2837,Parallel,N,K,19,0910-1750 MON-SAT,120,none,,Kensington Cl NW ,12 St NW ,Kensington Cl NW  &  12 St NW ,5,5
+120,2840,Parallel,E,K,19,0910-1750 MON-SAT,120,none,,13 St NW ,Kensington Rd  ,13 St NW  &  Kensington Rd  ,5,5
+121,3482,Parallel,W,3478,15,0910-1750 MON-SAT,540,none,Victoria Park,5 St SE,11 AV SE ,5 St SE &  11 AV SE ,5,5
+124,4057,Parallel,W,4057,8,0910-1750 MON-FRI,120,none,,11 St SW ,14 Av SW ,11 St SW  &  14 Av SW ,5,5
+125,5279,Angle,S,5279,21,"0910-1520 MON-FRI, 0910-1750 SAT",240,none,Bridgeland,Centre Av NE ,8 St NE ,Centre Av NE  &  8 St NE ,5,5
+126,4825,Parallel,N,4825,16,0910-1750 MON-SAT,120,none,4 Street SW,23 Av SW ,4 St SW ,23 Av SW  &  4 St SW ,5,5
+127,5126,Parallel,N,5126,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,1 Av NE ,8 St NE ,1 Av NE  &  8 St NE ,5,5
+128,5140,Parallel,N,5140,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,1 Av NE ,9 St NE ,1 Av NE  &  9 St NE ,5,5
+129,3546,Parallel,W,3546,8,0910-1750 MON-FRI,180,none,,11 St SW ,12 Av SW ,11 St SW  &  12 Av SW ,5,5
+130,5234,Parallel,W,5234,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,9A St NE ,Centre Av NE ,9A St NE  &  Centre Av NE ,5,5
+131,5194,Parallel,E,5194,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,7A St NE ,Centre Av NE ,7A St NE  &  Centre Av NE ,5,5
+132,5281,Parallel,S,5281,21,"0910-1520 MON-FRI, 0910-1750 SAT",240,none,Bridgeland,Centre Av NE ,8A St NE ,Centre Av NE  &  8A St NE ,5,5
+133,5131,Parallel,W,5131,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,9 St NE ,1 Av NE ,9 St NE  &  1 Av NE ,5,5
+135,5185,Parallel,S,5185,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,1 Av NE ,7A St NE ,1 Av NE  &  7A St NE ,5,5
+139,5209,Parallel,S,5209,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,1 Av NE ,8A St NE ,1 Av NE  &  8A St NE ,5,5
+140,5221,Parallel,S,5221,21,"0910-1520 MON-FRI, 0910-1750 SAT",60,none,Bridgeland,General Av NE ,8A St NE ,General Av NE  &  8A St NE ,5,5
+144,5188,Parallel,W,5188,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,8 St NE ,Centre Av NE ,8 St NE  &  Centre Av NE ,5,5
+145,5228,Parallel,E,5228,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,8A St NE ,General Av NE ,8A St NE  &  General Av NE ,5,5
+147,5113,Parallel,N,5113,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,1 Av NE ,7 St NE ,1 Av NE  &  7 St NE ,5,5
+149,5236,Parallel,E,5236,21,"0910-1520 MON-FRI, 0910-1750 SAT",120,none,Bridgeland,9 St NE ,Centre Av NE ,9 St NE  &  Centre Av NE ,5,5
+151,4280,Parallel,N,4280,10,0910-1750 MON-SAT,120,none,,16 Av SW ,11 St SW ,16 Av SW  &  11 St SW ,5,5
+152,4309,Angle,N,4309,11,0910-1750 MON-SAT,120,none,,16 Av SW ,9 St SW ,16 Av SW  &  9 St SW ,5,5
+154,4857,Parallel,N,4857,16,0910-1750 MON-SAT,120,none,4 Street SW,24 Av SW ,2 St SW ,24 Av SW  &  2 St SW ,5,5
+155,4969,Parallel,W,4969,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,11 Av NW ,Centre St N  &  11 Av NW ,5,5
+156,4986,Parallel,N,4986,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,none,Crescent Heights Village,11 Av NW ,1 St NW ,11 Av NW  &  1 St NW ,5,5
+157,5054,Parallel,W,5054,22,"1110-1520 MON-FRI, 0910-1750 SAT",540,none,,1 St NW ,15 Av NW ,1 St NW  &  15 Av NW ,5,5
+158,3908,Parallel,N,3908,13,0910-1750 MON-SAT,180,none,4 Street SW,14 Av SW ,4 St SW ,14 Av SW  &  4 St SW ,5,5
+159,3475,Parallel,E,3475,15,0910-1750 MON-FRI,240,none,Victoria Park,3 St SE ,11 Av SE ,3 St SE  &  11 Av SE ,5,5
+160,1179,Parallel,N,1179,5,0910-1750 MON-SAT,180,none,Downtown,3 Av SW ,5 St SW ,3 Av SW  &  5 St SW ,5,5
+162,1214,Parallel,S,1214,5,0910-1750 MON-SAT,120,none,Downtown,2 Av SW ,2 St SW ,2 Av SW  &  2 St SW ,5,5
+163,1201,Parallel,S,1201,5,0910-1750 MON-SAT,120,none,Downtown,2 Av SW ,3 St SW ,2 Av SW  &  3 St SW ,5,5
+164,3464,Parallel,S,3464,15,0910-1750 MON-FRI,240,none,Victoria Park,11 Av SE ,Olympic Wy SE ,11 Av SE  &  Olympic Wy SE ,5,5
+165,4684,Parallel,N,4684,14,0910-1750 SAT,120,none,,18 Av SE,Centre St SW ,18 Av SE &  Centre St SW ,5,5
+166,4266,Parallel,N,4266,10,0910-1750 MON-SAT,120,none,,16 Av SW ,12 St SW ,16 Av SW  &  12 St SW ,5,5
+167,1635,Parallel,N,1635,2,0910-1750 MON-SAT,120,none,Downtown,5 Av SE ,MacLeod ,5 Av SE  &  MacLeod ,5,5
+169,1172,Parallel,S,1172,5,0910-1750 MON-SAT,180,none,Downtown,2 Av SW ,5 St SW ,2 Av SW  &  5 St SW ,5,5
+170,2323,Parallel,W,2323,2,0910-1750 MON-FRI,120,none,,4 St SE,7  Av SE ,4 St SE &  7  Av SE ,5,5
+171,2919,Parallel,N,2919,9,0910-1750 MON-FRI,180,none,Beltline,10 Av SW ,5 St SW ,10 Av SW  &  5 St SW ,5,5
+177,3350,Parallel,S,3350,9,0910-1750 MON-FRI,120,PM,Beltline,11 Av SW ,6 St SW ,11 Av SW  &  6 St SW ,5,5
+178,3591,Parallel,N,3591,9,0910-1750 MON-FRI,180,none,,13 Av SW ,8 St SW ,13 Av SW  &  8 St SW ,5,5
+179,3616,Parallel,W,3616,9,0910-1750 MON-FRI,180,none,,6 St SW ,12 Av SW ,6 St SW  &  12 Av SW ,5,5
+180,3873,Parallel,S,3873,9,0910-1750 MON-FRI,180,none,,13 Av SW ,6 St SW ,13 Av SW  &  6 St SW ,5,5
+181,2069,Parallel,E,2069,2,0910-1750 MON-FRI,30,none,Downtown,1 St SE ,6 Av SE ,1 St SE  &  6 Av SE ,5,5
+182,1445,Parallel,E,1445,2,0910-1750 MON-FRI,120,none,,3 St SE ,3 Av SE ,3 St SE  &  3 Av SE ,5,5
+183,1282,Parallel,S,1282,2,0910-1750 MON-FRI,120,none,,Riverfront Av SE ,MacLeod ,Riverfront Av SE  &  MacLeod ,5,5
+184,2539,Parallel,N,2539,2,0910-1520 MON-FRI,120,AM&PM,Downtown,9 Av SE ,MacLeod ,9 Av SE  &  MacLeod ,5,5
+185,1437,Perpendicular,S,1437,2,0910-1750 MON-FRI,540,none,,Riverfront Av SE ,3 St SE ,Riverfront Av SE  &  3 St SE ,5,5
+186,1828,Parallel,E,1828,2,0910-1750 MON-FRI,120,none,Downtown,1 St SE ,5 Av SE ,1 St SE  &  5 Av SE ,5,5
+187,2083,Parallel,E,2083,2,0910-1750 MON-FRI,15,none,Downtown,MacLeod Tr SE ,6 Av SE ,MacLeod Tr SE  &  6 Av SE ,5,5
+191,2072,Parallel,S,2072,2,0910-1750 MON-FRI,120,none,Downtown,6 Av SE ,MacLeod ,6 Av SE  &  MacLeod ,5,5
+192,2326,Parallel,N,2326,2,0910-1750 MON-FRI,180,none,,8 Av SE ,3 St SE ,8 Av SE  &  3 St SE ,5,5
+193,1133,Parallel,N,1133,2,0910-1750 MON-FRI,120,none,,Riverfront Av SE ( 3 Av SE) ,3 St SE ,Riverfront Av SE ( 3 Av SE)  &  3 St SE ,5,5
+194,1641,Parallel,E,1641,2,0910-1750 MON-FRI,120,none,,3 St SE ,4 Av SE ,3 St SE  &  4 Av SE ,5,5
+197,1638,Angle,E,1638,2,0910-1750 MON-FRI,120,none,Downtown,MacLeod Tr. SE ,4 Av SE ,MacLeod Tr. SE  &  4 Av SE ,5,5
+199,1435,Angle,E,1435,2,0910-1750 MON-FRI,120,none,,MacLeod Tr SE ,3 Av SE ,MacLeod Tr SE  &  3 Av SE ,5,5
+209,4682,Parallel,W,4682,14,0910-1750 MON-SAT,120,none,,Centre St S ,17 Av SW ,Centre St S  &  17 Av SW ,5,5
+210,3460,Parallel,N,3460,14,0910-1750 MON-FRI,240,none,Victoria Park,12 Av SE ,MacLeod ,12 Av SE  &  MacLeod ,5,5
+211,3187,Parallel,W,3187,14,0910-1750 MON-FRI,240,none,Victoria Park,3 St SE ,10 Av SE ,3 St SE  &  10 Av SE ,5,5
+212,1863,Parallel,W,1863,1,0910-1750 MON-SAT,540,none,,5 St SE ,5 Av SE ,5 St SE  &  5 Av SE ,5,5
+213,1863,Parallel,W,1863,1,0910-1750 MON-SAT,540,none,,Riverfront Av SE ,Water St SE ,Riverfront Av SE  &  Water St SE ,5,5
+214,2570,Parallel,S,2570,1,0910-1750 MON-SAT,540,none,,8 Av SE ,4 St SE ,8 Av SE  &  4 St SE ,5,5
+215,2852,Parallel,E,2852,19,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,12 St NW ,Kensington Rd  ,12 St NW  &  Kensington Rd  ,5,5
+216,3309,Parallel,S,3309,8,0910-1520 MON-FRI,120,PM,,11 Av SW ,9 St SW ,11 Av SW  &  9 St SW ,5,5
+217,2861,Angle,E,2861,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Kensington Cr NW ,Kensington Rd ,Kensington Cr NW  &  Kensington Rd ,5,5
+218,2314,Parallel,W,2314,2,0910-1750 MON-SAT,60,none,Downtown,3 St SE ,7 Av SE ,3 St SE  &  7 Av SE ,5,5
+220,2114,Parallel,W,2114,1,0910-1750 MON-SAT,540,none,,6 St SE ,6 Av SE ,6 St SE  &  6 Av SE ,5,5
+223,2871,Parallel,N,2871,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Memorial Dr NW ,10 St NW ,Memorial Dr NW  &  10 St NW ,5,5
+224,2361,Parallel,E,2361,1,0910-1750 MON-SAT,540,none,,6 St SE ,7 Av SE ,6 St SE  &  7 Av SE ,5,5
+225,2574,Parallel,W,2574,1,0910-1750 MON-SAT,540,none,,5 St SE ,8 Av SE ,5 St SE  &  8 Av SE ,5,5
+226,4494,Parallel,E,4494,13,"0910-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,4 Street SW,4 St SW ,15 Av SW ,4 St SW  &  15 Av SW ,5,5
+227,4176,Parallel,E,4176,13,"0910-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,4 Street SW,4 St SW ,14 Av SW ,4 St SW  &  14 Av SW ,5,5
+228,1904,Parallel,S,1904,7,0910-1520 MON-FRI,120,PM,Downtown,6 Av SW ,9 St SW ,6 Av SW  &  9 St SW ,5,5
+230,1340,Parallel,N,1340,4b,0910-1520 MON-FRI,120,AM&PM,Downtown,4 Av SW ,4 St Sw ,4 Av SW  &  4 St Sw ,5,5
+231,1533,Parallel,W,1533,4b,0910-1520 MON-FRI,60,PM,Downtown,4 St SW ,4 Av SW ,4 St SW  &  4 Av SW ,5,5
+234,4207,Parallel,S,4207,14,0910-1750 MON-FRI,180,none,Victoria Park,14 Av SE ,1 St SE ,14 Av SE  &  1 St SE ,5,5
+235,2044,Parallel,S,2044,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,6 Av SE ,Centre St S ,6 Av SE  &  Centre St S ,5,5
+236,1410,Parallel,N,1410,3,"0910-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Chinatown,4 Av SE ,1 St SE ,4 Av SE  &  1 St SE ,5,5
+237,2907,Parallel,N,2907,9,0910-1750 MON-FRI,120,PM,,10 Av SW ,8 St SW ,10 Av SW  &  8 St SW ,5,5
+239,1398,Parallel,N,1398,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,4 Av SW ,Centre St S ,4 Av SW  &  Centre St S ,5,5
+240,1575,Parallel,W,1575,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,1 St SW ,4 Av SW ,1 St SW  &  4 Av SW ,5,5
+241,2495,Parallel,W,2495,4c,"0840-1520 MON-FRI, 0910-1750 SAT",60,AM&PM,Downtown,1 St SW ,8 Av SW ,1 St SW  &  8 Av SW ,5,5
+242,3166,Parallel,N,3166,14,0910-1520 MON-FRI,120,PM,Victoria Park,11 Av SE ,1 St SE ,11 Av SE  &  1 St SE ,5,5
+244,4540,Parallel,N,4539,14,0910-1520 MON-FRI,120,none,Victoria Park,17 Av SE ,MacLeod ,17 Av SE  &  MacLeod ,5,5
+245,1491,Parallel,W,1491,6,0910-1520 MON-FRI,120,AM&PM,Downtown,7 St SW ,4 Av SW ,7 St SW  &  4 Av SW ,5,5
+246,4678,Parallel,S,4678,14,0910-1750 MON-FRI,180,AM,,17 Av SW ,Centre St S ,17 Av SW  &  Centre St S ,5,5
+247,3543,Parallel,S,3543,8,0910-1750 MON-FRI,120,AM,,12 Av SW ,11 St SW ,12 Av SW  &  11 St SW ,5,5
+249,1845,Parallel,S,1845,2,0910-1750 MON-SAT,120,none,,5 Av SE ,3 St SE ,5 Av SE  &  3 St SE ,5,5
+251,2110,Parallel,S,2110,1,0910-1750 MON-FRI,180,none,,6 Av SE ,5 St SE ,6 Av SE  &  5 St SE ,5,5
+252,1866,Parallel,N,1866,1,0910-1750 MON-SAT,540,none,,6 Av SE ,4 St SE ,6 Av SE  &  4 St SE ,5,5
+253,1908,Parallel,W,1908,7,0910-1750 MON-FRI,180,none,Downtown,9 St SW ,6 Av SW ,9 St SW  &  6 Av SW ,5,5
+254,1932,Parallel,S,1932,6,0910-1520 MON-FRI,120,AM&PM,Downtown,6 Av SW ,7 St SW ,6 Av SW  &  7 St SW ,5,5
+256,1695,Parallel,W,1695,6,0910-1750 MON-FRI,120,none,Downtown,7 St SW ,5 Av SW ,7 St SW  &  5 Av SW ,5,5
+257,1488,Parallel,S,1488,6,0910-1750 MON-FRI,180,none,Downtown,4 Av SW ,7 St SW ,4 Av SW  &  7 St SW ,5,5
+258,2410,Parallel,W,2410,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,8 Av SW ,7 St SW ,8 Av SW  &  7 St SW ,5,5
+259,1731,Parallel,E,1731,4b,0910-1750 MON-FRI,120,none,Downtown,6 St SW ,5 Av SW ,6 St SW  &  5 Av SW ,5,5
+261,2204,Parallel,N,2204,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,8 Av SW ,5 St SW ,8 Av SW  &  5 St SW ,5,5
+263,2445,Parallel,E,2445,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,6 St SW ,8 Av SW ,6 St SW  &  8 Av SW ,5,5
+264,2442,Parallel,N,2442,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,9 Av SW ,5 St SW ,9 Av SW  &  5 St SW ,5,5
+265,1733,Parallel,S,1733,4b,0910-1520 MON-FRI,30,AM&PM,Downtown,5 Av SW ,4 St SW ,5 Av SW  &  4 St SW ,5,5
+266,2584,Parallel,S,2584,1,0910-1750 MON-FRI,540,none,,8 Av SE ,5 St SE ,8 Av SE  &  5 St SE ,5,5
+270,4654,Parallel,S,4652,13,0910-1750 MON-SAT,120,AM,,17 Av SW ,2 St SW ,17 Av SW  &  2 St SW ,5,5
+271,2413,Parallel,N,2413,4d,"0840-1750 MON-FRI, 0910-1750 SAT",540,AM,Downtown,9 Av SW ,7 St SW ,9 Av SW  &  7 St SW ,5,5
+272,1536,Parallel,N,1536,4b,0910-1520 MON-FRI,120,AM&PM,Downtown,5 Av SW ,4 S,5 Av SW  &  4 S,5,5
+274,1382,Parallel,N,1382,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,4 Av SW ,1 St SW ,4 Av SW  &  1 St SW ,5,5
+276,1578,Parallel,N,1578,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,5 Av SW ,1 St SW ,5 Av SW  &  1 St SW ,5,5
+277,1583,Parallel,E,1583,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,2 St SW ,4 Av SW ,2 St SW  &  4 Av SW ,5,5
+281,2771,Parallel,W,2771,18,0910-1750 MON-SAT,120,none,,9 St NW ,2 Av NW ,9 St NW  &  2 Av NW ,5,5
+282,2134,Parallel,N,2134,7,0910-1750 MON-FRI,120,none,Downtown,8 Av SW ,10 St SW ,8 Av SW  &  10 St SW ,5,5
+283,1498,Parallel,E,1498,6,0910-1520 MON-FRI,120,AM&PM,Downtown,8 St SW ,4 Av SW ,8 St SW  &  4 Av SW ,5,5
+284,1004,Parallel,N,1004,5,0910-1750 MON-SAT,180,none,Downtown,Eau Claire Av SW ,5 St SW ,Eau Claire Av SW  &  5 St SW ,5,5
+285,1401,Parallel,E,1401,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,1 St SW ,3 Av SW ,1 St SW  &  3 Av SW ,5,5
+286,1372,Parallel,E,1372,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,3 St SW ,3 Av SW ,3 St SW  &  3 Av SW ,5,5
+287,1547,Parallel,W,1547,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,3 St SW ,4 Av SW ,3 St SW  &  4 Av SW ,5,5
+288,1405,Parallel,S,1405,3,0910-1750 MON-SAT,120,none,Chinatown,3 Av SE ,1 St SE ,3 Av SE  &  1 St SE ,5,5
+290,1122,Parallel,N,1122,3,0910-1750 MON-SAT,120,none,Chinatown,2 Av SE ,Centre St S ,2 Av SE  &  Centre St S ,5,5
+291,1526,Angle,E,1526,4b,0910-1750 MON-FRI,120,none,Downtown,6 St SW ,4 Av SW ,6 St SW  &  4 Av SW ,5,5
+292,4811,Parallel,E,4811,16,0910-1750 MON-SAT,120,AM,4 Street SW,4 St SW ,21 Av SW ,4 St SW  &  21 Av SW ,5,5
+293,2166,Angle,E,2166,6,0910-1750 MON-FRI,20,none,Downtown,9 St SW ,7 Av SW ,9 St SW  &  7 Av SW ,5,5
+294,4593,Parallel,S,4593,11,0910-1750 MON-SAT,120,AM,Uptown 17,17 Av SW ,9A St SW ,17 Av SW  &  9A St SW ,5,5
+295,4615,Parallel,S,4615,11,0910-1750 MON-SAT,120,AM,Uptown 17,17 Av SW ,7 St SW ,17 Av SW  &  7 St SW ,5,5
+296,4623,Parallel,S,4623,11,0910-1750 MON-SAT,120,AM,Uptown 17,17 Av SW ,College Ln SW ,17 Av SW  &  College Ln SW ,5,5
+300,4836,Parallel,E,4836,16,0910-1750 MON-SAT,120,AM,4 Street SW,4 St SW ,22 Av SW ,4 St SW  &  22 Av SW ,5,5
+304,4820,Parallel,S,4820,16,0910-1750 MON-SAT,120,none,4 Street SW,22 Av SW ,4 St SW ,22 Av SW  &  4 St SW ,5,5
+306,4835,Parallel,N,4835,16,0910-1750 MON-SAT,120,none,4 Street SW,23 Av SW ,2 St SW ,23 Av SW  &  2 St SW ,5,5
+309,4849,Parallel,N,4849,16,0910-1750 MON-SAT,120,none,4 Street SW,24 Av SW ,4 St SW ,24 Av SW  &  4 St SW ,5,5
+312,1309,Parallel,W,1309,5,0910-1750 MON-FRI,180,none,Downtown,6 St SW ,3 Av SW ,6 St SW  &  3 Av SW ,5,5
+313,4659,Parallel,N,4659,13,0910-1750 MON-SAT,120,none,4 Street SW,18 Av SW ,2 St SW ,18 Av SW  &  2 St SW ,5,5
+315,1706,Parallel,S,1706,4b,0910-1520 MON-FRI,120,AM&PM,Downtown,5 Av SW ,6 St SW ,5 Av SW  &  6 St SW ,5,5
+316,4484,Parallel,S,4484,13,0910-1750 MON-SAT,180,none,,15 Av SW ,2 St SW ,15 Av SW  &  2 St SW ,5,5
+318,4466,Parallel,E,4466,11,0910-1750 MON-SAT,120,none,Uptown 17,6 St SW ,15 Av SW ,6 St SW  &  15 Av SW ,5,5
+319,2100,Parallel,E,2100,1,0910-1750 MON-SAT,540,none,,5 St SE ,6 Av SE ,5 St SE  &  6 Av SE ,5,5
+321,2103,Parallel,N,2103,1,0910-1750 MON-SAT,540,none,,7 Av SE ,4 St SE ,7 Av SE  &  4 St SE ,5,5
+322,2117,Parallel,N,2117,1,0910-1750 MON-SAT,540,none,,7 Av SE ,5 St SE ,7 Av SE  &  5 St SE ,5,5
+326,1894,Parallel,W,1894,7,0910-1750 MON-FRI,180,none,Downtown,10 St SW ,6 Av SW ,10 St SW  &  6 Av SW ,5,5
+328,1656,Parallel,W,1656,7,0910-1520 MON-FRI,180,PM,Downtown,10 St SW ,5 Av SW ,10 St SW  &  5 Av SW ,5,5
+330,2337,Parallel,W,2337,1,0910-1750 MON-SAT,540,none,,5 St SE ,7 Av SE ,5 St SE  &  7 Av SE ,5,5
+331,5350,Parallel,N,5350,24,0910-1750 MON-FRI,540,none,,Research Wy NW ,33 St NW ,Research Wy NW  &  33 St NW ,5,5
+333,3556,Parallel,S,3556,8,0910-1750 MON-FRI,120,AM,,12 Av SW ,10 St SW ,12 Av SW  &  10 St SW ,5,5
+335,4863,Parallel,N,4863,16,0910-1750 MON-SAT,180,none,,24 Av SW ,1 St SW ,24 Av SW  &  1 St SW ,5,5
+339,2215,Parallel,W,2215,4d,"0710-1750 MON-FRI, 0910-1750 SAT",60,none,Downtown,4 St SW ,7 Av SW ,4 St SW  &  7 Av SW ,5,5
+340,4885,Parallel,E,4885,16,"0910-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,4 Street SW,4 St SW ,24 Av SW ,4 St SW  &  24 Av SW ,5,5
+341,4882,Parallel,N,4882,16,0910-1750 MON-SAT,120,none,4 Street SW,25 Av SW ,2 St SW ,25 Av SW  &  2 St SW ,5,5
+342,4462,Parallel,N,4462,11,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,Uptown 17,17 Av SW ,5 St SW ,17 Av SW  &  5 St SW ,5,5
+344,4476,Parallel,N,4476,13,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,Uptown 17,17 Av SW ,4 St SW ,17 Av SW  &  4 St SW ,5,5
+348,1073,Parallel,E,1073,5,0910-1750 MON-SAT,180,none,Downtown,5 St SW ,Eau Claire Av SW ,5 St SW  &  Eau Claire Av SW ,5,5
+349,1059,Parallel,E,1059,5,0910-1750 MON-SAT,180,none,Downtown,6 St SW ,Eau Claire Av SW ,6 St SW  &  Eau Claire Av SW ,5,5
+350,3385,Parallel,N,3385,12,0910-1750 MON-FRI,120,none,,12 Av SW ,4 St SW ,12 Av SW  &  4 St SW ,5,5
+352,1029,Parallel,W,1029,6,0910-1750 MON-FRI,180,none,Downtown,7 St SW ,1 Av SW ,7 St SW  &  1 Av SW ,5,5
+353,2455,Parallel,N,2455,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,9 Av SW ,4 St SW ,9 Av SW  &  4 St SW ,5,5
+354,1600,Parallel,S,1600,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,4 Av SE ,Centre St S ,4 Av SE  &  Centre St S ,5,5
+355,1284,Parallel,W,1284,6,0910-1750 MON-FRI,120,none,Downtown,8 St SW ,3 Av SW ,8 St SW  &  3 Av SW ,5,5
+358,1311,Parallel,N,1311,4b,0910-1750 MON-FRI,30,none,Downtown,4 Av SW ,6 St SW ,4 Av SW  &  6 St SW ,5,5
+360,3047,Parallel,E,3047,8,0910-1750 MON-SAT,540,none,,10 St SW ,10 Av SW ,10 St SW  &  10 Av SW ,5,5
+362,3040,Parallel,W,3040,8,0910-1750 MON-FRI,120,none,,9 St SW ,10 Av SW ,9 St SW  &  10 Av SW ,5,5
+364,1814,Parallel,E,1814,4a,"0910-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,Centre St S ,5 Av SE ,Centre St S  &  5 Av SE ,5,5
+366,4897,Parallel,S,4897,16,0910-1750 MON-SAT,120,none,4 Street SW,25 Av SW ,4 St SW ,25 Av SW  &  4 St SW ,5,5
+367,4910,Parallel,N,4910,16,0910-1750 MON-SAT,180,none,,26 Av SW ,2 St SW ,26 Av SW  &  2 St SW ,5,5
+369,5599,Parallel,N,5599,25,0910-1750 MON-SAT,120,none,,WINDSOR Cr SW ,WINDSOR Cr SW ,WINDSOR Cr SW  &  WINDSOR Cr SW ,5,5
+372,4827,Parallel,S,4827,16,0910-1750 MON-SAT,120,none,4 Street SW,22 Av SW ,2 St SW ,22 Av SW  &  2 St SW ,5,5
+374,2405,Parallel,E,2405,6,0910-1750 MON-FRI,120,none,Downtown,9 St SW ,8 Av SW ,9 St SW  &  8 Av SW ,5,5
+375,2400,Parallel,W,2400,6,0910-1750 MON-FRI,120,none,Downtown,8 St SW(Alley) ,8 Av SW ,8 St SW(Alley)  &  8 Av SW ,5,5
+376,3029,Parallel,N,3029,8,0910-1520 MON-FRI,180,PM,,11 Av SW ,10 St SW ,11 Av SW  &  10 St SW ,5,5
+377,1529,Parallel,S,1529,4b,0910-1520 MON-FRI,120,AM&PM,Downtown,4 Av SW ,4 S,4 Av SW  &  4 S,5,5
+381,2903,Parallel,N,2903,8,0910-1520 MON-FRI,180,PM,,10 Av SW ,9 St SW ,10 Av SW  &  9 St SW ,5,5
+385,4688,Parallel,S,4688,14,0910-1520 MON-FRI,120,AM&PM,,17 Av SE ,1 St SE ,17 Av SE  &  1 St SE ,5,5
+386,1678,Parallel,S,1678,6,0910-1520 MON-FRI,20,AM&PM,Downtown,5 Av SW ,8 St SW ,5 Av SW  &  8 St SW ,5,5
+387,1920,Parallel,S,1920,6,0910-1520 MON-FRI,60,AM&PM,Downtown,6 Av SW ,8 St SW ,6 Av SW  &  8 St SW ,5,5
+390,2148,Parallel,N,2148,7,0910-1750 MON-FRI,120,none,Downtown,8 Av SW ,9 St SW ,8 Av SW  &  9 St SW ,5,5
+391,2789,Parallel,N,2789,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Kensington Rd NW ,11A St NW ,Kensington Rd NW  &  11A St NW ,5,5
+392,1176,Parallel,W,1176,5,0910-1750 MON-SAT,180,none,Downtown,5 St SW ,2 Av SW ,5 St SW  &  2 Av SW ,5,5
+395,1239,Parallel,E,1239,5,0910-1750 MON-SAT,120,none,Chinatown,2 St SW ,2 Av SW ,2 St SW  &  2 Av SW ,5,5
+396,2804,Perpendicular,E,2804,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,11 St NW ,3 Av ,11 St NW  &  3 Av ,5,5
+399,1337,Parallel,W,1337,4b,0910-1750 MON-FRI,120,none,Downtown,4 St SW ,3 Av SW ,4 St SW  &  3 Av SW ,5,5
+400,1393,Parallel,W,1393,4a,"0710-1750 MON-FRI, 0910-1750 SAT",15,none,Downtown,Centre St S ,3 Av SW ,Centre St S  &  3 Av SW ,5,5
+401,1460,Parallel,S,1460,7,0910-1750 MON-FRI,180,none,Downtown,4 Av SW ,9 St SW ,4 Av SW  &  9 St SW ,5,5
+403,1999,Parallel,E,1999,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,4 St SW ,6 Av SW ,4 St SW  &  6 Av SW ,5,5
+407,1000,Angle,N,1000,6,0910-1750 MON-FRI,180,none,Downtown,1 Av SW ,6 St SW ,1 Av SW  &  6 St SW ,5,5
+409,5368,Parallel,N,5368,23,0910-1750 MON-FRI,180,none,,8 Av NW ,12 St NW ,8 Av NW  &  12 St NW ,5,5
+413,5397,Parallel,S,5397,20,"1110-1320 MON-FRI, 0910-1750 SAT",120,PM,Inglewood,9 Av SE ,8 St SE ,9 Av SE  &  8 St SE ,5,5
+415,5405,Parallel,S,5405,20,"1110-1320 MON-FRI, 0910-1750 SAT",120,PM,Inglewood,9 Av SE ,10 St SE ,9 Av SE  &  10 St SE ,5,5
+420,2578,Parallel,N,2578,1,0910-1750 MON-SAT,120,none,,9 Av SE,4 St SE to 5 St SE,9 Av SE &  4 St SE to 5 St SE,5,5
+421,2716,Parallel,S,2716,18,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Gladstone Rd NW ,10 St NW ,Gladstone Rd NW  &  10 St NW ,5,5
+422,2107,Parallel,E,2107,1,0910-1750 MON-SAT,540,none,,Riverfront Ln SE ,6 Av SE ,Riverfront Ln SE  &  6 Av SE ,5,5
+423,2481,Parallel,W,2481,4c,"0710-1750 MON-FRI, 0910-1750 SAT",30,none,Downtown,2 St SW ,8 Av SW ,2 St SW  &  8 Av SW ,5,5
+424,2016,Parallel,S,2016,4a,"0840-1520 MON-FRI, 0910-1750 SAT",60,AM&PM,Downtown,6 Av SW ,1 St SW ,6 Av SW  &  1 St SW ,5,5
+425,4720,Angle,N,J,13,0910-1750 MON-SAT,120,none,4 Street SW,19 Av SW ,2 St SW ,19 Av SW  &  2 St SW ,5,5
+429,1242,Parallel,S,1242,3,0910-1750 MON-SAT,120,none,Chinatown,2 Av SW ,Centre St S ,2 Av SW  &  Centre St S ,5,5
+430,1543,Parallel,S,1543,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,4 Av SW ,3 St SW ,4 Av SW  &  3 St SW ,5,5
+431,4795,Parallel,S,4795,16,0910-1750 MON-SAT,120,none,4 Street SW,21 Av SW ,4 St SW ,21 Av SW  &  4 St SW ,5,5
+434,4860,Parallel,E,4860,16,0910-1750 MON-SAT,120,AM,4 Street SW,4 St SW ,23 Av SW ,4 St SW  &  23 Av SW ,5,5
+436,4707,Parallel,S,4707,13,0910-1750 MON-SAT,120,none,4 Street SW,18 Av SW ,4 St SW ,18 Av SW  &  4 St SW ,5,5
+437,4709,Parallel,W,4709,13,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,4 Street SW,4 St SW ,18 Av SW ,4 St SW  &  18 Av SW ,5,5
+438,4773,Parallel,W,4773,16,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,4 Street SW,4 St SW ,20 Av SW ,4 St SW  &  20 Av SW ,5,5
+444,1971,Parallel,E,1971,4b,0910-1750 MON-FRI,120,none,Downtown,6 St SW ,6 Av SW ,6 St SW  &  6 Av SW ,5,5
+447,4569,Parallel,E,4569,11,0910-1750 MON-SAT,120,none,Uptown 17,13 St SW ,17 Av SW ,13 St SW  &  17 Av SW ,5,5
+451,4567,Parallel,W,4567,11,0910-1750 MON-SAT,120,none,Uptown 17,12 St SW ,17 Av SW ,12 St SW  &  17 Av SW ,5,5
+452,4574,Parallel,W,4574,11,0910-1750 MON-SAT,120,none,Uptown 17,11 St SW ,17 Av SW ,11 St SW  &  17 Av SW ,5,5
+453,4591,Parallel,E,4591,11,0910-1750 MON-SAT,120,none,Uptown 17,10A St SW ,17 Av SW ,10A St SW  &  17 Av SW ,5,5
+454,4588,Parallel,W,4588,11,0910-1750 MON-SAT,30,none,Uptown 17,10 St SW ,17 Av SW ,10 St SW  &  17 Av SW ,5,5
+456,4422,Angle,S,4422,11,0910-1750 MON-SAT,60,none,Uptown 17,16 Av SW ,8 St SW ,16 Av SW  &  8 St SW ,5,5
+460,2899,Parallel,N,2899,8,0910-1520 MON-FRI,180,PM,,10 Av SW ,10 St SW ,10 Av SW  &  10 St SW ,5,5
+468,2782,Parallel,N,2782,19,"0910-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Kensington / Louise Crossing,Kensington Rd NW ,12 St NW ,Kensington Rd NW  &  12 St NW ,5,5
+470,2653,Parallel,S,2653,4c,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,9 Av SE ,1 St SE ,9 Av SE  &  1 St SE ,5,5
+473,4613,Parallel,E,4613,11,0910-1750 MON-SAT,120,none,Uptown 17,9 St SW ,17 Av SW ,9 St SW  &  17 Av SW ,5,5
+474,4626,Parallel,W,4626,11,0910-1750 MON-SAT,30,none,Uptown 17,College Ln SW ,17 Av SW ,College Ln SW  &  17 Av SW ,5,5
+480,1025,Parallel,N,1025,3,0910-1750 MON-SAT,120,none,Chinatown,Riverfront Av SE ,1 St SE ,Riverfront Av SE  &  1 St SE ,5,5
+483,4557,Parallel,S,4557,11,0910-1750 MON-SAT,120,AM,Uptown 17,17 Av SW ,13 St SW ,17 Av SW  &  13 St SW ,5,5
+484,4585,Parallel,S,4585,11,0910-1750 MON-SAT,120,AM,Uptown 17,17 Av SW ,10 St SW ,17 Av SW  &  10 St SW ,5,5
+485,2448,Parallel,S,2448,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,8 Av SW ,4 St SW ,8 Av SW  &  4 St SW ,5,5
+487,1041,Parallel,N,1041,6,0910-1750 MON-FRI,180,none,Downtown,2 Av SW ,6 St SW ,2 Av SW  &  6 St SW ,5,5
+488,2193,Parallel,N,2193,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,8 Av SW ,6 St SW ,8 Av SW  &  6 St SW ,5,5
+489,1992,Parallel,W,1992,4a,"0710-1750 MON-FRI, 0910-1750 SAT",30,none,Downtown,3 St SW ,6 Av SW ,3 St SW  &  6 Av SW ,5,5
+491,1988,Parallel,S,1988,4a,"0840-1520 MON-FRI, 0910-1750 SAT",30,AM&PM,Downtown,6 Av SW ,3 St SW ,6 Av SW  &  3 St SW ,5,5
+492,1550,Parallel,N,1550,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,5 Av SW ,3 St SW ,5 Av SW  &  3 St SW ,5,5
+493,1648,Parallel,N,1648,1,0910-1750 MON-FRI,180,none,,Confluence Way ,5 St SE ,Confluence Way  &  5 St SE ,5,5
+494,1873,Parallel,S,1873,1,0910-1750 MON-FRI,540,none,,Confluence Way ,Riverfount Av SE ,Confluence Way  &  Riverfount Av SE ,5,5
+497,4746,Parallel,S,J,16,0910-1750 MON-SAT,120,none,4 Street SW,19 Av SW ,4 St SW ,19 Av SW  &  4 St SW ,5,5
+500,4760,Parallel,N,J,16,0910-1750 MON-SAT,120,none,4 Street SW,20 Av SW ,2 St SW ,20 Av SW  &  2 St SW ,5,5
+503,4802,Parallel,S,4802,16,0910-1750 MON-SAT,120,none,4 Street SW,21 Av SW ,2 St SW ,21 Av SW  &  2 St SW ,5,5
+505,3903,Parallel,S,3903,13,0910-1750 MON-SAT,180,none,4 Street SW,13 Av SW ,4 St SW ,13 Av SW  &  4 St SW ,5,5
+512,2732,Parallel,E,2732,18,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,10 St NW ,3 Av NW ,10 St NW  &  3 Av NW ,5,5
+515,2031,Parallel,S,2031,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,6 Av SW ,Centre St S ,6 Av SW  &  Centre St S ,5,5
+518,2244,Parallel,W,2244,4c,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,2 St SW ,7 Av SW ,2 St SW  &  7 Av SW ,5,5
+521,1522,Parallel,N,1522,4b,0940-1520 MON-FRI,120,AM&PM,Downtown,5 Av SW ,5 St SW ,5 Av SW  &  5 St SW ,5,5
+522,2647,Parallel,S,2647,4c,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,9 Av SW ,1 St SW ,9 Av SW  &  1 St SW ,5,5
+523,2511,Parallel,N,2511,4c,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,9 Av SW ,Centre St S ,9 Av SW  &  Centre St S ,5,5
+525,1557,Parallel,S,1557,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,4 Av SW ,2 St Sw ,4 Av SW  &  2 St Sw ,5,5
+526,1564,Parallel,N,1564,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,5 Av SW ,2 St Sw ,5 Av SW  &  2 St Sw ,5,5
+528,1369,Parallel,N,1369,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,4 Av SW ,2 St SW ,4 Av SW  &  2 St SW ,5,5
+530,5349,Parallel,W,5349,24,0910-1750 MON-FRI,240,none,,33 St NW ,Research Wy NW ,33 St NW  &  Research Wy NW ,5,5
+534,1104,Parallel,S,1104,3,"0910-1520 MON-FRI, 0910-1750 SAT",180,PM,Chinatown,Riverfront Av SW ,Centre St S ,Riverfront Av SW  &  Centre St S ,5,5
+536,1494,Parallel,N,1494,6,0940-1520 MON-FRI,60,AM&PM,Downtown,5 Av SW ,7 St SW ,5 Av SW  &  7 St SW ,5,5
+538,3667,Parallel,S,3667,12,0910-1750 MON-FRI,120,AM&PM,Victoria Park,12 Av SW ,1 St SW ,12 Av SW  &  1 St SW ,5,5
+539,3654,Parallel,S,3654,12,0910-1750 MON-FRI,180,AM&PM,,12 Av SW ,2 St SW ,12 Av SW  &  2 St SW ,5,5
+540,3106,Parallel,S,3106,12,0910-1750 MON-FRI,120,AM&PM,Beltline,10 Av SW ,4 St Sw ,10 Av SW  &  4 St Sw ,5,5
+542,1786,Parallel,E,1786,4a,"0710-1750 MON-FRI, 0910-1750 SAT",30,none,Downtown,2 St SW ,5 Av SW ,2 St SW  &  5 Av SW ,5,5
+552,3424,Parallel,W,3424,14,0910-1750 MON-FRI,180,none,Victoria Park,Centre St S ,11 Av SW ,Centre St S  &  11 Av SW ,5,5
+554,4183,Parallel,W,4183,13,0910-1750 MON-SAT,120,none,Victoria Park,1 St SW ,14 Av SW ,1 St SW  &  14 Av SW ,5,5
+557,3926,Parallel,E,3926,13,"0910-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,4 Street SW,4 St SW ,13 Av SW ,4 St SW  &  13 Av SW ,5,5
+565,3266,Parallel,S,3266,8,0910-1520 MON-FRI,180,PM,,11 Av SW ,12 St SW ,11 Av SW  &  12 St SW ,5,5
+567,3015,Parallel,N,3015,8,0910-1520 MON-FRI,180,PM,,11 Av SW ,11 St Sw ,11 Av SW  &  11 St Sw ,5,5
+570,4748,Parallel,W,4748,16,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,4 Street SW,4 St SW ,19 Av SW ,4 St SW  &  19 Av SW ,5,5
+576,1519,Parallel,W,1519,4b,0910-1750 MON-FRI,120,none,Downtown,5 St SW ,4 Av SW ,5 St SW  &  4 Av SW ,5,5
+578,2858,Parallel,N,2858,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Kensington Cr NW ,11 St NW ,Kensington Cr NW  &  11 St NW ,5,5
+580,3068,Parallel,W,3068,9,0910-1750 MON-FRI,120,none,Beltline,7 St SW ,10 Av SW ,7 St SW  &  10 Av SW ,5,5
+581,3312,Parallel,W,3312,8,0910-1750 MON-FRI,120,none,,9 St SW ,11 Av SW ,9 St SW  &  11 Av SW ,5,5
+582,3291,Angle,E,3291,8,0910-1750 MON-FRI,180,none,,12 St SW ,11 Av SW ,12 St SW  &  11 Av SW ,5,5
+583,3880,Parallel,N,3880,9,0910-1750 MON-FRI,180,none,,14 Av SW ,6 St SW ,14 Av SW  &  6 St SW ,5,5
+587,3082,Parallel,W,3082,9,0910-1750 MON-FRI,180,none,Beltline,6 St SW ,10 Av SW ,6 St SW  &  10 Av SW ,5,5
+589,5273,Angle,S,5273,21,"0910-1520 MON-FRI, 0910-1750 SAT",240,none,Bridgeland,Centre Av NE ,7A St NE ,Centre Av NE  &  7A St NE ,5,5
+593,3322,Parallel,S,3322,9,0910-1750 MON-FRI,120,PM,Beltline,11 Av SW ,8 St SW ,11 Av SW  &  8 St SW ,5,5
+602,2174,Parallel,W,2174,4d,"0710-1520 MON-FRI, 0910-1750 SAT",120,PM,Downtown,7 St SW ,7 Av SW ,7 St SW  &  7 Av SW ,5,5
+604,4219,Parallel,N,4219,14,0910-1750 MON-FRI,60,none,Victoria Park,15 Av SE ,MacLeod ,15 Av SE  &  MacLeod ,5,5
+608,4997,Parallel,W,4997,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,12 Av NW ,Centre St N  &  12 Av NW ,5,5
+609,5034,Parallel,E,5034,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,13 Av NE ,Centre St N  &  13 Av NE ,5,5
+610,1772,Parallel,E,1772,4a,"0710-1750 MON-FRI, 0910-1750 SAT",60,none,Downtown,3 St SW ,5 Av SW ,3 St SW  &  5 Av SW ,5,5
+611,5041,Parallel,W,5041,22,"1110-1520 MON-FRI, 0910-1750 SAT",540,none,,Centre B St N ,14 Av NW ,Centre B St N  &  14 Av NW ,5,5
+612,5048,Parallel,W,5048,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,,Centre St N ,14 Av NE ,Centre St N  &  14 Av NE ,5,5
+616,3877,Parallel,W,3877,9,0910-1750 MON-FRI,180,none,,6 St SW ,13 Av SW ,6 St SW  &  13 Av SW ,5,5
+626,1363,Parallel,S,1363,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,3 Av SW ,2 St SW ,3 Av SW  &  2 St SW ,5,5
+627,2187,Parallel,W,2187,4d,0840-1520 MON-FRI,120,AM&PM,Downtown,6 St SW ,7 Av SW ,6 St SW  &  7 Av SW ,5,5
+630,3452,Parallel,E,3452,14,0910-1520 MON-FRI,120,AM&PM,Victoria Park,1 St SE ,11 Av SE to 12 Av SE,1 St SE  &  11 Av SE to 12 Av SE,5,5
+631,2712,Parallel,E,2712,23,0910-1750 MON-FRI,240,none,,12 St NW ,5 Av NW ,12 St NW  &  5 Av NW ,5,5
+633,3005,Parallel,E,3005,8,0910-1750 MON-SAT,540,none,,13 St SW ,10 Av SW ,13 St SW  &  10 Av SW ,5,5
+634,3714,Parallel,E,3714,14,0910-1520 MON-FRI,120,AM&PM,Victoria Park,1 St SE,12 Av SE to 13 Av SE,1 St SE &  12 Av SE to 13 Av SE,5,5
+636,2152,Parallel,E,2152,7,0910-1750 MON-FRI,180,none,Downtown,10 St SW ,7 Av SW ,10 St SW  &  7 Av SW ,5,5
+642,3971,Parallel,E,3971,14,0910-1520 MON-FRI,120,AM&PM,Victoria Park,1 St SE ,13 Av SE ,1 St SE  &  13 Av SE ,5,5
+644,2866,Parallel,W,2866,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,10A St NW ,Kensington cr NW ,10A St NW  &  Kensington cr NW ,5,5
+649,2093,Parallel,E,2093,2,0910-1520 MON-FRI,120,AM&PM,,3 St SE ,6 Av SE ,3 St SE  &  6 Av SE ,5,5
+652,1277,Angle,E,1277,3,0910-1750 MON-SAT,120,none,Chinatown,1 St SE ,Riverfront Av SE ,1 St SE  &  Riverfront Av SE ,5,5
+655,3261,Parallel,W,3261,8,0910-1750 MON-SAT,540,none,,13 St SW ,11 Av SW ,13 St SW  &  11 Av SW ,5,5
+658,5344,Parallel,N,5344,24,0910-1750 MON-FRI,540,none,,33 St NW ,Research Rd NW ,33 St NW  &  Research Rd NW ,5,5
+660,4220,Parallel,E,4220,14,0910-1750 MON-FRI,60,none,Victoria Park,1 St SE ,14 Av SE ,1 St SE  &  14 Av SE ,5,5
+661,2641,Parallel,S,2641,4c,"0710-1750 MON-FRI, 0910-1750 SAT",60,none,Downtown,9 Av SW ,2 St SW ,9 Av SW  &  2 St SW ,5,5
+662,1094,Parallel,W,1094,5,0910-1750 MON-SAT,120,none,Chinatown,1 St SW ,Riverfront Av SW ,1 St SW  &  Riverfront Av SW ,5,5
+663,1097,Parallel,S,1097,5,0910-1750 MON-SAT,120,none,Chinatown,2 Av SW ,1 St SW ,2 Av SW  &  1 St SW ,5,5
+667,3969,Parallel,S,3969,14,0910-1750 MON-FRI,120,none,Victoria Park,13 Av SE ,MacLeod ,13 Av SE  &  MacLeod ,5,5
+668,3957,Parallel,S,3957,14,0910-1750 MON-FRI,180,none,Victoria Park,13 Av SE ,1 St SE ,13 Av SE  &  1 St SE ,5,5
+671,4536,Parallel,S,4536,14,0910-1750 MON-FRI,120,none,Victoria Park,15 Av SE ,Macleod ,15 Av SE  &  Macleod ,5,5
+673,1194,Parallel,N,1194,5,0910-1750 MON-SAT,120,none,Downtown,3 Av SW ,4 St SW ,3 Av SW  &  4 St SW ,5,5
+674,1334,Parallel,S,1334,4b,0910-1750 MON-FRI,120,none,Downtown,3 Av SW ,4 St Sw ,3 Av SW  &  4 St Sw ,5,5
+676,4169,Parallel,W,4169,13,0910-1750 MON-SAT,180,none,,2 St SW ,14 Av SW ,2 St SW  &  14 Av SW ,5,5
+679,1386,Parallel,E,1386,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,2 St SW ,3 Av SW ,2 St SW  &  3 Av SW ,5,5
+682,1737,Parallel,W,1737,4b,0910-1750 MON-FRI,120,none,Downtown,4 St SW ,5 Av SW ,4 St SW  &  5 Av SW ,5,5
+683,2936,Parallel,N,2936,14,0910-1750 MON-FRI,120,none,,10 Av SW ,Centre St S ,10 Av SW  &  Centre St S ,5,5
+685,4396,Parallel,W,4396,11,0910-1750 MON-SAT,120,none,Uptown 17,10 St SW ,16 Av SW ,10 St SW  &  16 Av SW ,5,5
+686,4605,Parallel,E,4605,11,0910-1750 MON-SAT,120,none,Uptown 17,9A St SW ,17 Av SW ,9A St SW  &  17 Av SW ,5,5
+688,2807,Parallel,W,2807,17,"0910-1550 MON-FRI, 0910-1750 SAT",120,AM&PM,Kensington / Louise Crossing,10 St NW ,2 Av NW ,10 St NW  &  2 Av NW ,5,5
+689,5355,Parallel,W,5355,24,0910-1750 MON-FRI,540,none,,36 St NW ,40 Av NW ,36 St NW  &  40 Av NW ,5,5
+690,3403,Parallel,E,3403,12,0910-1750 MON-FRI,120,AM&PM,,4 St SW ,11 Av SW ,4 St SW  &  11 Av SW ,5,5
+698,1780,Parallel,W,1780,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,1 St SW ,5 Av SW ,1 St SW  &  5 Av SW ,5,5
+699,1155,Parallel,E,1155,6,0910-1750 MON-FRI,180,none,Downtown,8 St SW ,2 Av SW ,8 St SW  &  2 Av SW ,5,5
+701,2006,Parallel,W,2006,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,2 St SW ,6 Av SW ,2 St SW  &  6 Av SW ,5,5
+705,3859,Parallel,S,3859,9,0910-1750 MON-FRI,180,none,,13 Av SW ,7 St SW ,13 Av SW  &  7 St SW ,5,5
+709,3111,Parallel,E,3111,12,0910-1750 MON-FRI,120,none,Beltline,4 St SW ,10 Av SW to 11 Av SW,4 St SW  &  10 Av SW to 11 Av SW,5,5
+710,2392,Parallel,S,2392,6,0910-1750 MON-FRI,120,none,Downtown,8 Av SW ,8 St SW ,8 Av SW  &  8 St SW ,5,5
+711,4745,Parallel,E,4745,14,0910-1750 MON-SAT,120,none,Victoria Park,Park Road SE ,MacLeod ,Park Road SE  &  MacLeod ,5,5
+718,2911,Parallel,N,2911,9,0910-1750 MON-FRI,120,AM&PM,Beltline,10 Av SW ,7 St SW ,10 Av SW  &  7 St SW ,5,5
+722,3445,Parallel,S,3445,14,0910-1520 MON-FRI,120,AM&PM,Victoria Park,11 Av SE ,MacLeod ,11 Av SE  &  MacLeod ,5,5
+726,1480,Parallel,N,1480,6,0940-1520 MON-FRI,120,AM&PM,Downtown,5 Av SW ,8 St Sw ,5 Av SW  &  8 St Sw ,5,5
+728,3442,Parallel,E,3442,14,0910-1750 MON-FRI,180,none,Victoria Park,Centre St S ,11 Av SE ,Centre St S  &  11 Av SE ,5,5
+729,4109,Parallel,S,4109,9,0910-1750 MON-FRI,180,none,,14 Av SW ,7 St SW ,14 Av SW  &  7 St SW ,5,5
+730,3396,Parallel,W,3396,12,0910-1750 MON-FRI,120,AM&PM,,2 St SW ,11 Av SW ,2 St SW  &  11 Av SW ,5,5
+731,1260,Parallel,W,1260,3,"0910-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Chinatown,1 St SE ,2 Av SE ,1 St SE  &  2 Av SE ,5,5
+734,4410,Parallel,W,4410,11,0910-1750 MON-SAT,30,none,Uptown 17,9 St SW ,16 Av SW ,9 St SW  &  16 Av SW ,5,5
+735,4454,Parallel,E,4454,11,0910-1750 MON-SAT,30,none,Uptown 17,7 St SW ,15 Av SW ,7 St SW  &  15 Av SW ,5,5
+739,4619,Parallel,W,4619,11,0910-1750 MON-SAT,30,none,Uptown 17,7 St SW ,17 Av SW ,7 St SW  &  17 Av SW ,5,5
+741,2522,Parallel,W,2522,4c,"0710-1750 MON-FRI, 0910-1750 SAT",30,none,Downtown,1 St SE ,8 Av SE ,1 St SE  &  8 Av SE ,5,5
+743,3661,Parallel,N,3661,12,0910-1750 MON-FRI,180,none,,13 Av SW ,2 St SW ,13 Av SW  &  2 St SW ,5,5
+746,4706,Parallel,E,4706,14,0910-1520 MON-FRI,120,AM&PM,Victoria Park,1 St SE,17 Av SE to 18 Av SE,1 St SE &  17 Av SE to 18 Av SE,5,5
+749,1957,Parallel,E,1957,4b,0910-1520 MON-FRI,120,AM&PM,Downtown,7 St SW ,6 Av SW ,7 St SW  &  6 Av SW ,5,5
+751,3468,Parallel,W,3468,15,0910-1750 MON-FRI,180,none,Victoria Park,Olympic Wy SE ,11 Av SE ,Olympic Wy SE  &  11 Av SE ,5,5
+753,4703,Parallel,N,4703,14,0910-1750 MON-FRI,120,none,Victoria Park,18 Av SW ,MacLeod ,18 Av SW  &  MacLeod ,5,5
+757,3679,Parallel,E,3679,12,0910-1750 MON-FRI,180,none,Victoria Park,2 St SW ,12 Av SW ,2 St SW  &  12 Av SW ,5,5
+758,4621,Parallel,E,4621,11,0910-1750 MON-SAT,120,AM,Uptown 17,8 St SW ,17 Av SW to 18 Av SW,8 St SW  &  17 Av SW to 18 Av SW,5,5
+763,3412,Parallel,W,3412,12,0910-1750 MON-FRI,180,none,Victoria Park,1 St SW ,11 Av SW ,1 St SW  &  11 Av SW ,5,5
+764,1292,Parallel,S,1292,6,0910-1750 MON-FRI,180,none,Downtown,3 Av SW,7 St SW to 8 St SW,3 Av SW &  7 St SW to 8 St SW,5,5
+768,1255,Parallel,E,1255,3,0910-1750 MON-SAT,120,none,Chinatown,1 St SW ,2 Av SW ,1 St SW  &  2 Av SW ,5,5
+784,5338,Parallel,N,5338,24,0910-1750 MON-FRI,540,none,,Research Rd NW ,33 St NW ,Research Rd NW  &  33 St NW ,5,5
+792,1948,Parallel,S,1948,4b,0910-1520 MON-FRI,120,AM&PM,Downtown,6 Av SW ,6 St SW ,6 Av SW  &  6 St SW ,5,5
+796,1090,Parallel,S,1090,5,0910-1750 MON-SAT,120,none,Chinatown,Riverfront Av SW ,1 St SW ,Riverfront Av SW  &  1 St SW ,5,5
+801,2876,Angle,S,2876,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Kensington Cr NW ,10A St NW ,Kensington Cr NW  &  10A St NW ,5,5
+807,2601,Parallel,S,2601,7,0910-1750 MON-SAT,540,none,,9 Av SW ,13 St SW to 14 St SW,9 Av SW  &  13 St SW to 14 St SW,5,5
+810,1960,Parallel,S,1960,4b,0910-1520 MON-FRI,60,AM&PM,Downtown,6 Av SW ,5 St SW ,6 Av SW  &  5 St SW ,5,5
+812,4501,Parallel,W,4501,13,0910-1750 MON-SAT,120,none,Victoria Park,1 St SW ,15 Av SW ,1 St SW  &  15 Av SW ,5,5
+814,1803,Parallel,S,1803,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,5 Av SE ,Centre St S ,5 Av SE  &  Centre St S ,5,5
+815,1592,Parallel,N,1592,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,5 Av SW ,Centre St S ,5 Av SW  &  Centre St S ,5,5
+818,3933,Parallel,W,3933,13,0910-1750 MON-SAT,120,none,First Street,1 St SW ,13 Av SW ,1 St SW  &  13 Av SW ,5,5
+823,3124,Angle,W,3124,12,0910-1750 MON-FRI,120,none,Beltline,2 St SW ,10 Av SW ,2 St SW  &  10 Av SW ,5,5
+827,4121,Parallel,E,4121,9,"0910-1520 MON-FRI, 0910-1750 SAT",180,AM&PM,,8 St SW,14 Av to 15 Av SW,8 St SW &  14 Av to 15 Av SW,5,5
+829,2777,Parallel,S,2777,19,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Gladstone Rd NW ,13 St NW ,Gladstone Rd NW  &  13 St NW ,5,5
+830,2790,Parallel,E,2790,19,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,12 St NW ,Gladstone Rd ,12 St NW  &  Gladstone Rd ,5,5
+832,4341,Parallel,E,4341,11,"0910-1520 MON-FRI, 0910-1750 SAT",180,AM&PM,,8 St SW,15 Av to 16 Av SW,8 St SW &  15 Av to 16 Av SW,5,5
+833,1129,Parallel,N,1129,3,0910-1750 MON-SAT,120,none,Chinatown,Riverfront Av SE ( 3 Av SE) ,MacLeod ,Riverfront Av SE ( 3 Av SE)  &  MacLeod ,5,5
+834,3871,Parallel,E,3871,9,0910-1750 MON-FRI,180,AM&PM,,8 St SW,13 Av to 14 Av SW,8 St SW &  13 Av to 14 Av SW,5,5
+836,3535,Parallel,W,3535,8,0910-1750 MON-FRI,120,none,,12 St SW ,12 Av SW ,12 St SW  &  12 Av SW ,5,5
+837,2951,Parallel,N,2951,15,0910-1750 MON-FRI,240,none,,10 Av SE ,3 St SE ,10 Av SE  &  3 St SE ,5,5
+839,3194,Parallel,S,3194,15,0910-1750 MON-FRI,120,none,Victoria Park,10 Av SE ,Olympic Wy SE ,10 Av SE  &  Olympic Wy SE ,5,5
+843,3944,Parallel,S,3944,14,0910-1750 MON-FRI,180,none,Victoria Park,13 Av SW ,Centre St S ,13 Av SW  &  Centre St S ,5,5
+844,3686,Parallel,W,3686,14,0910-1750 MON-FRI,180,none,Victoria Park,Centre St S ,12 Av SW ,Centre St S  &  12 Av SW ,5,5
+845,3929,Parallel,S,3929,13,0910-1750 MON-SAT,180,none,Victoria Park,13 Av SW ,1 St SW ,13 Av SW  &  1 St SW ,5,5
+851,2813,Perpendicular,E,2813,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,10A St NW ,3 Av NW ,10A St NW  &  3 Av NW ,5,5
+852,3471,Parallel,S,3471,15,0910-1750 MON-FRI,240,none,Victoria Park,12 Av SE ,3 St SE ,12 Av SE  &  3 St SE ,5,5
+863,3589,Parallel,W,3589,9,0910-1750 MON-FRI,180,none,,8 St SW,12 Av to 13 Av SW,8 St SW &  12 Av to 13 Av SW,5,5
+865,4511,Parallel,S,4511,14,0910-1750 MON-FRI,180,none,Victoria Park,15 Av SW ,Centre St S ,15 Av SW  &  Centre St S ,5,5
+871,5504,Parallel,W,5504,NA,0910-1750 MON-SAT,120,PM,,Edmonton Tr NE ,13 Av NE ,Edmonton Tr NE  &  13 Av NE ,5,5
+875,5508,Parallel,W,5508,NA,0910-1750 MON-SAT,120,AM,,Edmonton Tr NE ,12 Av NE ,Edmonton Tr NE  &  12 Av NE ,5,5
+878,5513,Parallel,W,5513,NA,0910-1750 MON-SAT,120,AM,,Edmonton Tr NE ,11 Av NE ,Edmonton Tr NE  &  11 Av NE ,5,5
+881,1186,Parallel,S,1186,5,0910-1750 MON-SAT,120,none,Downtown,2 Av SW ,4 St SW ,2 Av SW  &  4 St SW ,5,5
+885,5572,Parallel,E,5572,25,0910-1750 MON-SAT,120,none,,8 St SW,49 Av SW ,8 St SW &  49 Av SW ,5,5
+886,5549,Parallel,N,5549,25,0910-1750 MON-SAT,120,none,,49 Av SW, ELBOW Dr SW  ,49 Av SW &   ELBOW Dr SW  ,5,5
+887,5596,Parallel,N,5596,25,0910-1750 MON-SAT,120,none,,51 Av SW ,6 St SW ,51 Av SW  &  6 St SW ,5,5
+889,5578,Parallel,S,5578,25,0910-1750 MON-SAT,120,none,,50 Av SW ,8 St SW ,50 Av SW  &  8 St SW ,5,5
+892,3170,Parallel,E,3170,14,0910-1750 MON-FRI,120,none,,Centre St S ,10 Av SE ,Centre St S  &  10 Av SE ,5,5
+894,4358,Parallel,N,4358,11,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,,17 Av SW ,14 St SW ,17 Av SW  &  14 St SW ,5,5
+899,4992,Parallel,E,4992,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,11 Av NE ,Centre St N  &  11 Av NE ,5,5
+900,4988,Parallel,S,4988,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,none,Crescent Heights Village,12 Av NE ,1 St NE ,12 Av NE  &  1 St NE ,5,5
+901,5006,Parallel,E,5006,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,12 Av NE ,Centre St N  &  12 Av NE ,5,5
+902,5021,Parallel,W,5021,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Crescent Heights Village,Centre St N ,13 Av NW ,Centre St N  &  13 Av NW ,5,5
+908,2686,Parallel,N,2686,19,0910-1750 MON-SAT,120,none,,2 Av NW ,14 St NW ,2 Av NW  &  14 St NW ,5,5
+909,2823,Parallel,S,2823,19,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Kensington Rd NW ,13 St NW ,Kensington Rd NW  &  13 St NW ,5,5
+912,1038,Angle,W,1038,6,0910-1750 MON-FRI,120,none,Downtown,6 St SW ,1 Av SW ,6 St SW  &  1 Av SW ,5,5
+913,4294,Parallel,N,4294,11,0910-1750 MON-SAT,240,none,,16 Av SW ,10 St SW ,16 Av SW  &  10 St SW ,5,5
+920,2780,Parallel,W,2780,19,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,12 St NW ,1 Av NW ,12 St NW  &  1 Av NW ,5,5
+924,5018,Parallel,S,5018,22,"1110-1520 MON-FRI, 0910-1750 SAT",540,none,Crescent Heights Village,14 Av NW ,Centre B St N ,14 Av NW  &  Centre B St N ,5,5
+926,5026,Parallel,E,5026,22,"1110-1520 MON-FRI, 0910-1750 SAT",120,none,Crescent Heights Village,Centre B St N ,13 Av NW ,Centre B St N  &  13 Av NW ,5,5
+927,5046,Parallel,S,5046,22,"1110-1520 MON-FRI, 0910-1750 SAT",540,none,,15 Av NW ,Centre St N ,15 Av NW  &  Centre St N ,5,5
+929,5052,Parallel,E,5052,22,"1110-1520 MON-FRI, 0910-1750 SAT",540,none,,Centre B St N ,14 Av NE ,Centre B St N  &  14 Av NE ,5,5
+932,5487,Parallel,E,5487,NA,"0910-1450 MON-FRI, 0910-1750 SAT",120,PM,,Edmonton Tr NE ,7 Av NE ,Edmonton Tr NE  &  7 Av NE ,5,5
+933,5621,Parallel,E,5621,14,0910-1750 MON-SAT,120,none,,1 St SW ,18 Av SW ,1 St SW  &  18 Av SW ,5,5
+934,3493,Parallel,S,3493,15,0910-1750 MON-SAT,540,none,Victoria Park,11 Av SE ,5 St SE ,11 Av SE  &  5 St SE ,5,5
+936,3494,Parallel,W,3494,15,0910-1750 MON-FRI,540,none,Victoria Park,6 St SE ,11 Av SE ,6 St SE  &  11 Av SE ,5,5
+937,5517,Parallel,W,5517,NA,0910-1750 MON-SAT,120,AM,,Edmonton Tr NE ,10 Av NE ,Edmonton Tr NE  &  10 Av NE ,5,5
+939,4497,Parallel,S,4497,13,0910-1750 MON-SAT,120,none,Victoria Park,15 Av SW ,1 St SW ,15 Av SW  &  1 St SW ,5,5
+941,2915,Parallel,N,2915,9,0910-1750 MON-FRI,120,none,Beltline,10 Av SW ,6 St SW ,10 Av SW  &  6 St SW ,5,5
+944,2749,Parallel,S,2748,18,"0910-1550 MON-FRI, 0910-1750 SAT",20,AM&PM,Kensington / Louise Crossing,10 St NW ,2 Av St NW ,10 St NW  &  2 Av St NW ,5,5
+945,5523,Parallel,W,5523,NA,0910-1750 MON-SAT,120,AM,,Edmonton Tr NE ,9 Av NE ,Edmonton Tr NE  &  9 Av NE ,5,5
+952,2865,Parallel,S,2865,17,0910-1750 MON-SAT,120,AM,Kensington / Louise Crossing,Kensington Rd NW ,10A St ,Kensington Rd NW  &  10A St ,5,5
+954,1681,Parallel,W,1681,6,0910-1750 MON-FRI,120,AM,Downtown,8 St SW ,5 Av SW ,8 St SW  &  5 Av SW ,5,5
+956,8900,Parallel,W,8900,,1000-2100 MON-SUN,180,none,,50a St ,Lakeshore ,50a St  &  Lakeshore ,5,5
+958,8900,Parallel,W,8900,,1000-2100 MON-SUN,180,none,,50 St,Lakeshore Dr ,50 St &  Lakeshore Dr ,5,5
+960,8900,Parallel,E,8900,,1000-2100 MON-SUN,180,none,,49 St ,Lakeshore Dr ,49 St  &  Lakeshore Dr ,5,5
+961,8900,Parallel,S,8900,,1000-2100 MON-SUN,180,none,,Lakeshore Dr,49 St ,Lakeshore Dr &  49 St ,5,5
+962,8900,Parallel,S,8900,,1000-2100 MON-SUN,180,none,,Lakeshore Dr,46 St ,Lakeshore Dr &  46 St ,5,5
+964,8900,Parallel,N,8900,,1000-2100 MON-SUN,180,none,,50 Av,48 St ,50 Av &  48 St ,5,5
+966,8900,Parallel,W,8900,,1000-2100 MON-SUN,180,none,,46 St ,50a Av ,46 St  &  50a Av ,5,5
+967,8900,Parallel,W,8900,,1000-2100 MON-SUN,180,none,,46 St,Lakeshore Dr ,46 St &  Lakeshore Dr ,5,5
+968,8900,Parallel,E,8900,,1000-2100 MON-SUN,180,none,,46 St ,Lakeshore Dr ,46 St  &  Lakeshore Dr ,5,5
+970,8900,Parallel,S,8900,,1000-2100 MON-SUN,180,none,,Lakeshore Dr,44 St ,Lakeshore Dr &  44 St ,5,5
+971,8900,Parallel,W,8900,,1000-2100 MON-SUN,180,none,,44 St,Lakeshore Dr ,44 St &  Lakeshore Dr ,5,5
+974,8900,Parallel,W,8900,,1000-2100 MON-SUN,180,none,,50 St,50a Av ,50 St &  50a Av ,5,5
+976,8900,Parallel,N,8900,,1000-2100 MON-SUN,180,none,,50 Av,50a Av ,50 Av &  50a Av ,5,5
+986,1852,Parallel,N,1852,2,0910-1520 MON-FRI,120,PM,,6 Av SE,3 St SE ,6 Av SE &  3 St SE ,5,5
+996,4448,Parallel,N,4448,11,"0910-1520 MON-FRI, 0910-1750 SAT",120,PM,Uptown 17,17 Av SW ,6 St SW ,17 Av SW  &  6 St SW ,5,5
+999,4751,Parallel,N,4751,16,0910-1750 MON-SAT,120,none,4 Street SW,20 Av SW ,4 St SW ,20 Av SW  &  4 St SW ,5,5
+1006,2598,Parallel,E,2598,1,0910-1750 MON-SAT,540,none,,6 St SE ,8 Av SE ,6 St SE  &  8 Av SE ,5,5
+1011,2923,Parallel,N,2923,12,0910-1750 MON-FRI,120,none,Beltline,10 Av SW ,4 St SW ,10 Av SW  &  4 St SW ,5,5
+1012,3936,Parallel,N,3936,13,0910-1750 MON-SAT,180,none,Victoria Park,14 Av SW ,1 St SW ,14 Av SW  &  1 St SW ,5,5
+1013,4117,Parallel,N,4117,9,0910-1750 MON-SAT,180,none,,15 Av SW ,7 St SW ,15 Av SW  &  7 St SW ,5,5
+1015,4158,Parallel,N,4158,13,0910-1750 MON-SAT,180,none,4 Street SW,15 Av SW ,4 St SW ,15 Av SW  &  4 St SW ,5,5
+1026,3595,Parallel,E,3595,9,0910-1750 MON-FRI,180,none,,9 St SW ,12 Av SW ,9 St SW  &  12 Av SW ,5,5
+1030,4338,Parallel,N,4338,11,0910-1750 MON-SAT,120,none,Uptown 17,16 Av SW ,7 St SW ,16 Av SW  &  7 St SW ,5,5
+1032,3280,Parallel,S,3280,8,0910-1520 MON-FRI,120,PM,,11 Av SW ,11 St SW ,11 Av SW  &  11 St SW ,5,5
+1034,4696,Parallel,E,4696,14,0910-1750 MON-FRI,120,none,,Centre St S ,17 Av SE ,Centre St S  &  17 Av SE ,5,5
+1041,3863,Parallel,W,3863,9,0910-1750 MON-FRI,180,none,,7 St SW ,13 Av SW ,7 St SW  &  13 Av SW ,5,5
+1047,4049,Parallel,N,4049,8,0910-1750 MON-SAT,120,none,,15 Av SW ,12 St SW ,15 Av SW  &  12 St SW ,5,5
+1050,2794,Parallel,N,2794,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Kensington Rd NW ,11 St NW ,Kensington Rd NW  &  11 St NW ,5,5
+1051,2799,Parallel,W,2799,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,10A St NW ,3 Av ,10A St NW  &  3 Av ,5,5
+1053,2998,Parallel,W,2998,8,0910-1750 MON-SAT,540,none,,12 St SW ,10 Av SW ,12 St SW  &  10 Av SW ,5,5
+1055,1012,Parallel,W,1012,5,0910-1750 MON-SAT,120,none,Chinatown,2 St SW ,Barclay Pr SW ,2 St SW  &  Barclay Pr SW ,5,5
+1061,1159,Parallel,S,1159,6,0910-1750 MON-FRI,180,none,Downtown,2 Av SW ,7 St SW ,2 Av SW  &  7 St SW ,5,5
+1066,3563,Parallel,N,3563,8,0910-1750 MON-FRI,180,none,,13 Av SW ,10 St SW ,13 Av SW  &  10 St SW ,5,5
+1067,4215,Parallel,E,4215,14,0910-1750 MON-FRI,120,none,Victoria Park,Centre St S,14 Av to 15 Av SW,Centre St S &  14 Av to 15 Av SW,5,5
+1073,1148,Parallel,W,1148,6,0910-1750 MON-FRI,180,none,Downtown,7 St SW ,2 Av SW ,7 St SW  &  2 Av SW ,5,5
+1075,4368,Parallel,W,4368,11,0910-1750 MON-SAT,120,none,Uptown 17,12 St SW ,16 Av SW ,12 St SW  &  16 Av SW ,5,5
+1076,4403,Parallel,E,4403,11,0910-1750 MON-SAT,120,none,Uptown 17,11 St SW ,16 Av SW ,11 St SW  &  16 Av SW ,5,5
+1088,1062,Parallel,S,1062,5,0910-1750 MON-SAT,180,none,Downtown,Eau Claire Av SW ,4 St SW ,Eau Claire Av SW  &  4 St SW ,5,5
+1089,3950,Parallel,N,3950,14,0910-1750 MON-FRI,180,none,First Street,14 Av SW ,Centre St S ,14 Av SW  &  Centre St S ,5,5
+1098,3602,Parallel,W,3602,9,0910-1750 MON-FRI,180,none,Beltline,7 St SW ,12 Av SW ,7 St SW  &  12 Av SW ,5,5
+1116,2427,Parallel,N,2427,4d,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,9 Av SW ,6 St SW ,9 Av SW  &  6 St SW ,5,5
+1125,2462,Parallel,S,2462,4c,"0710-1750 MON-FRI, 0910-1750 SAT",30,none,Downtown,8 Av SW ,3 St SW ,8 Av SW  &  3 St SW ,5,5
+1132,4097,Parallel,S,4097,9,0910-1750 MON-FRI,180,none,,14 Av SW ,8 St SW ,14 Av SW  &  8 St SW ,5,5
+1141,3071,Parallel,N,3071,9,0910-1750 MON-FRI,120,PM,Beltline,11 Av SW ,7 St SW ,11 Av SW  &  7 St SW ,5,5
+1142,4326,Parallel,E,4326,11,0910-1750 MON-SAT,120,none,,9 St SW ,15 Av SW ,9 St SW  &  15 Av SW ,5,5
+1146,4525,Parallel,S,4525,14,0910-1750 MON-FRI,180,none,Victoria Park,15 Av SW ,1 St SE ,15 Av SW  &  1 St SE ,5,5
+1148,3336,Parallel,S,3336,9,0910-1750 MON-FRI,120,PM,Beltline,11 Av SW ,7 S,11 Av SW  &  7 S,5,5
+1164,5544,Parallel,W,5544,25,0910-1750 MON-SAT,120,none,,8 ST SW ,48 Av SW ,8 ST SW  &  48 Av SW ,5,5
+1167,5582,Parallel,N,5582,25,0910-1750 MON-SAT,120,none,,50 Av SW ,6 St SW ,50 Av SW  &  6 St SW ,5,5
+1177,2004,Parallel,S,2004,4a,"0840-1520 MON-FRI, 0910-1750 SAT",120,AM&PM,Downtown,6 Av SW ,2 St SW ,6 Av SW  &  2 St SW ,5,5
+1182,2591,Parallel,N,2591,1,0910-1750 MON-FRI,180,none,,9 Av SE,5 St SE to 6 St SE,9 Av SE &  5 St SE to 6 St SE,5,5
+1185,3152,Parallel,W,3152,14,0910-1750 MON-FRI,120,none,,Centre St S ,10 Av SW ,Centre St S  &  10 Av SW ,5,5
+1189,2785,Parallel,W,2785,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,11A St NW ,Gladstone Rd ,11A St NW  &  Gladstone Rd ,5,5
+1194,2873,Parallel,E,2873,17,0910-1750 MON-SAT,30,none,Kensington / Louise Crossing,10A St NW ,Kensington Cr NW ,10A St NW  &  Kensington Cr NW ,5,5
+1195,2810,Parallel,N,2810,17,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,Kensington Rd NW ,10 St NW ,Kensington Rd NW  &  10 St NW ,5,5
+1205,2749,Parallel,S,2749,18,"0910-1550 MON-FRI, 0910-1750 SAT",120,AM&PM,Kensington / Louise Crossing,10 St NW ,2 Av  NW ,10 St NW  &  2 Av  NW ,5,5
+1207,2755,Parallel,S,2755,18,0910-1750 MON-SAT,120,none,Kensington / Louise Crossing,3 Av NW ,9A St NW ,3 Av NW  &  9A St NW ,5,5
+1208,4673,Parallel,N,4673,13,0910-1750 MON-SAT,120,none,,18 Av SW ,1 St SW ,18 Av SW  &  1 St SW ,5,5
+1214,5364,Parallel,S,5364,24,0910-1750 MON-FRI,540,none,,Research Pl ,33 St NW ,Research Pl  &  33 St NW ,5,5
+1219,5474,Parallel,E,5474,NA,"0910-1450 MON-FRI, 0910-1750 SAT",120,PM,,Edmonton Tr NE ,8 Av NE ,Edmonton Tr NE  &  8 Av NE ,5,5
+1222,5611,Parallel,N,5611,16,0910-1750 MON-SAT,120,none,,19 Av SW ,1 St SW ,19 Av SW  &  1 St SW ,5,5
+1224,4284,Parallel,E,4284,11,0910-1750 MON-SAT,120,none,,12 St SW ,15 Av SW ,12 St SW  &  15 Av SW ,5,5
+1227,2895,Parallel,N,2895,8,0910-1750 MON-FRI,180,none,,10 Av SW ,11 St SW ,10 Av SW  &  11 St SW ,5,5
+1253,4516,Parallel,W,4516,14,0910-1750 MON-FRI,180,none,Victoria Park,Centre St S ,15 Av SW ,Centre St S  &  15 Av SW ,5,5
+1259,1031,Parallel,N,1031,6,0910-1750 MON-FRI,180,none,Downtown,2 Av SW ,7 St SW,2 Av SW  &  7 St SW,5,5
+1267,1236,Parallel,N,1236,4a,0910-1750 MON-SAT,120,none,Downtown,3 Av SW ,1 St SW ,3 Av SW  &  1 St SW ,5,5
+1269,1389,Parallel,S,1389,4a,"0710-1750 MON-FRI, 0910-1750 SAT",120,none,Downtown,3 Av SW ,Centre St S ,3 Av SW  &  Centre St S ,5,5
+1279,1208,Parallel,N,1208,5,0910-1750 MON-SAT,120,none,Downtown,3 Av SW ,3 St SW ,3 Av SW  &  3 St SW ,5,5
+1288,5277,Perpendicular,E,5277,21,"0910-1520 MON-FRI, 0910-1750 SAT",180,none,Bridgeland,7A St NE,Centre Av NE,7A St NE &  Centre Av NE,5,5
