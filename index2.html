@@ -15,8 +15,8 @@
         zoom: 12,
         center: center
         }
-        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+        const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        const infoWindow = new google.maps.InfoWindow();
         
 
         // Retrieve our data and plot it
@@ -46,7 +46,8 @@
 
                 
 
-               
+                
+
                 //key : AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk
                 fetch(" https://maps.googleapis.com/maps/api/geocode/json?address="  + search + "&key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk") 
                 .then(function(response){
@@ -64,11 +65,18 @@
                     long = Number.parseFloat(long);
 
                     let myLatLng = { lat: my_lat, lng: long};
-                    new google.maps.Marker({
+                    const marker = new google.maps.Marker({
                     position: myLatLng,
                     map,
-                    title: name,
+                    title: address,
                     });
+
+                    marker.addListener("click", () => {
+                            infoWindow.close();
+                            storeAddress(marker);
+                            infoWindow.setContent("<p>Availability is 5</p>");
+                            infoWindow.open(marker.getMap(), marker);
+                            });
 
                     }
                     catch (error){
@@ -85,6 +93,15 @@
 
 
             };
+
+        //This function will get the address or lat/long of marker that user clicked on. 
+        //We can collect address or long/lat, search csv, then get availability. 
+        function storeAddress(marker){
+            marker.getTitle();
+            // call Maheen's function to show address and check in /checkout
+        }
+
+        
             </script>
     <script defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk&callback=initMap">
