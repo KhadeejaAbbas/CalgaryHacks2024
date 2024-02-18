@@ -1,18 +1,21 @@
-from flask import Flask, render_template, request, redirect, url_for, requests, StringIO
+from flask import Flask, render_template, request, redirect, url_for 
+import requests
 import csv
 import pandas as pd
+from io import StringIO
 
 app = Flask(__name__)
 
 
+
 @app.route('/is-parked', methods=['POST'])
-def index():
+def parked_app():
     data = request.json
     is_failure = str(update_csv_route( data["address-1"], data["address-2"]))
     return str(is_failure)
 
 @app.route('/availability', methods=['POST'])
-def index():
+def available_app():
     data = request.json
     available = str(searchFunctionAddress( data["address-1"], data["address-2"]))
     return available 
