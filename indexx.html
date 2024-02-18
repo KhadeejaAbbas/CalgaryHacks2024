@@ -167,8 +167,12 @@
                             addresss = address.split(", ");
                             address
                             available = getAvailability(address[0], address[1]); 
-                            console.log(address);
-                            infoWindow.setContent(`<p>Available ${5}</p>`);
+                            console.log(available);
+                            let text = document.querySelector(".parking-amount").innerHTML;
+                            if (text == ""){
+                                text = "5";
+                            }
+                            infoWindow.setContent(`<p>Available ${text}</p>`);
                             infoWindow.open(marker.getMap(), marker);
                             });
 
@@ -209,7 +213,7 @@
                     let out_address = document.querySelector(".parking-amount");
                     console.log(data);
                     out_address.innerHTML = data;
-                    return value;
+                    return data;
                     })
                 .catch(error => {
                 console.error('Error:', error);
@@ -293,7 +297,7 @@
 
         checkInButton.addEventListener('click', function() {
             //const Street = document.getElementById('.street-name');
-            let avail = document.getElementById('..parking-amount').innerHTML;
+            let avail = document.querySelector('.parking-amount').innerHTML;
            // let text = Street.textContent;
            // text = text.split(", ");
            // setAvailability(text[0], text[1]);

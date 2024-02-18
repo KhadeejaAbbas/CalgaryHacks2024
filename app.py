@@ -7,7 +7,7 @@ from flask_cors import cross_origin
 
 app = Flask(__name__)
 
-
+available_1 = 5
 
 @app.route('/is-parked', methods=['POST'])
 @cross_origin()
@@ -24,7 +24,9 @@ def available_app():
     return available
 
 def decrement(value):
+    global available_1
     value = int(value)
+    available_1 = 1
     return value - 1
 
 def decrement_spot(street_name):
@@ -95,7 +97,7 @@ def decrement_column_value(df, index, column_name):
     return df
 
 def searchFunctionAddress(column1_value, column2_value):
-    
+    global available_1
     column1_name = 'First_address'
     column2_name = 'Second_address'
     matching_rows = []
