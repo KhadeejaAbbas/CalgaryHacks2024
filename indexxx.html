@@ -22,15 +22,15 @@
         h1 {
             text-align: center;
         }
-        ul {
-            list-style-type: none;
+        div {
+            
             padding: 0;
         }
-        li {
+        .user-address {
             padding: 10px 0;
             border-bottom: 1px solid #ddd;
         }
-        li:last-child {
+        .user-address{
             border-bottom: none;
         }
         .street-name {
@@ -39,17 +39,196 @@
         .parking-amount {
             color: #f06543;
         }
+        .search-bar {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
     </style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> function initMap(){
+        let url = "https://data.calgary.ca/resource/rhkg-vwwp.json?status=Active&zone_type=Parking Zone&$$app_token=uyOXQ2JFvkleBIzNmLdEsrCQj";
+        // Intialize our map
+        var center = new google.maps.LatLng(51.049999, -114.066666);
+        var mapOptions = {
+        zoom: 12,
+        center: center
+        }
+        const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        const infoWindow = new google.maps.InfoWindow();
+        
+
+        // Retrieve our data and plot it
+
+        $.getJSON(url, function(data, textstatus) {
+            $.each(data, function(i, entry) {
+                let address = entry.address_desc;
+                let remove = address.indexOf("To");
+                address = address.slice(0, remove);
+                address = address.replace("Fr", "");
+                let list = address.split(" ");
+                let search = "";
+                for (let i = 0; i < list.length - 1; i ++){
+                    if (list[i] != ""){
+                        if (i == 0 ){
+                            search += list[i];
+                        }
+                        else if ( list[i] == ","){
+                            search += "%26"
+                        }
+                        else{
+                            search += ("%20" + list[i]);
+                        }
+                    }
+                }
+               
+
+                
+
+                
+
+                //key : AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk
+                fetch(" https://maps.googleapis.com/maps/api/geocode/json?address="  + search + "&key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk") 
+                .then(function(response){
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }
+                return response.json()})
+                .then(function(data){ 
+                    try{
+                    let my_lat= data.results[0].geometry.location.lat;
+                    let long = data.results[0].geometry.location.lng;
+                    let name = data.results[0].formatted_address;
+
+                    my_lat= Number.parseFloat(my_lat);
+                    long = Number.parseFloat(long);
+
+                    let myLatLng = { lat: my_lat, lng: long};
+                    const marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map,
+                    title: address,
+                    });
+
+                    marker.addListener("click", () => {
+                            infoWindow.close();
+                            let availability = storeAddress(marker);
+                            infoWindow.setContent("<p>Availability is 5</p>");
+                            infoWindow.open(marker.getMap(), marker);
+                            });
+
+                    }
+                    catch (error){
+                        console.error(error);
+                    }
+                })
+                .catch(error => {
+                console.error('Error:', error);
+                });
+
+            });
+        });
+
+
+
+            };
+
+        //This function will get the address or lat/long of marker that user clicked on. 
+        //We can collect address or long/lat, search csv, then get availability. 
+        function storeAddress(marker){
+            let address = marker.getTitle();
+            // call Maheen's function to show address and check in /checkout
+            addresss = address.split(", ")
+            result = getAvailability(address[0], address[1])
+            let out_address = document.querySelector(".street-name");
+            
+            out_address.style.textContent = result;
+            
+            // call Ayesha's function to get availability 
+        }
+
+        function getAvailability(column_1, column_2) { 
+            fetch('http://127.0.0.1:5000/available', {
+                method: 'POST',
+                body: JSON.stringify({ "author": author, "title": title}),
+                headers: {
+                'Content-Type': 'application/json'
+                }
+                })
+                .then(function(response){
+                    if (!response.ok) {
+                        throw new Error(`HTTP error: ${response.status}`);
+                    }
+                    return response.json()})
+                .then(function(data){ 
+                    //If book is available make the border around the book image green, if not make it red  
+                    if ( data.available == "1"){
+                        book_image.style.border = "5px solid #377458";
+                    }
+                    else{
+                        book_image.style.border = "5px solid red";
+                    }
+                    })
+                .catch(error => {
+                console.error('Error:', error);
+                });
+            }
+            </script>
+     <script defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk&callback=initMap">
+   </script>
 </head>
 <body>
-    <h1>Calgary Parking Availability</h1>
-    <input type="file" id="csvFileInput">
-    <input type="text" id="searchInput" placeholder="Search for a street...">
-    <button id="checkInButton">Check into Parking Lot</button>
-    <button id="checkOutButton">Check Out Of Parking Lot</button>
+    <div class="container">
+        <h1>Calgary Parking Availability</h1>
+        <div id="map"></div>
+        <button id="checkInButton" class="check-in-button">Check Into Parking Lot</button>
+        <button id="checkOutButton" class="check-Out-button">Check Out Of Parking Lot</button>
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search for a street...">
+        <div id="streetList">
+            <div id="4 Street SW">
+                Street Name<span class="street-name"></span>: <span class="parking-amount"></span> spots available
+            </div>
+            <!-- Add more streets and parking information as needed -->
+        </ul>
+    </div>
+   <script>
+        // JavaScript for search functionality
+        const searchInput = document.getElementById('searchInput');
+        const streetList = document.getElementById('streetList').getElementsByTagName('li');
+        const checkInButton = document.getElementById('checkInButton');
 
-    <div id="searchResults"></div>
+        searchInput.addEventListener('input', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            for (let i = 0; i < streetList.length; i++) {
+                const streetName = streetList[i].getElementsByClassName('street-name')[0].innerText.toLowerCase();
+                if (streetName.includes(searchTerm)) {
+                    streetList[i].style.display = '';
+                } else {
+                    streetList[i].style.display = 'none';
+                }
+            }
+        });
+        checkInButton.addEventListener('click', function() {
+            const Street4 = document.getElementById('4 Street SW');
+            if (Street4) {
+                const Street4Parking = Street4.getElementsByClassName('parking-amount')[0];
+                let availableSpots = parseInt(Street4Parking.textContent);
+                if (availableSpots > 0) {
+                    availableSpots--;
+                    Street4Parking.textContent = availableSpots;
+                    alert('You have successfully checked into the parking lot on 4 Street SW!');
 
+                }
+                else {
+             // Visual feedback: Display an error message if no spots available
+            alert('Sorry, there are no available spots on 4 Street SW.');
+        }
+            }
+        });
+    </script>
     <script src="scriptt.js"></script>
 </body>
 </html>
