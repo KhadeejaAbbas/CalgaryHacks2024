@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script> function initMap(){
         let url = "https://data.calgary.ca/resource/rhkg-vwwp.json?status=Active&zone_type=Parking Zone&$$app_token=uyOXQ2JFvkleBIzNmLdEsrCQj";
-
-    
         // Intialize our map
         var center = new google.maps.LatLng(51.049999, -114.066666);
         var mapOptions = {
@@ -18,16 +17,73 @@
         }
         var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
+        let myLatLng = { lat: my_lat, lng: long};
+                    new google.maps.Marker({
+                    position: myLatLng,
+                    map,
+                    title: name,
+                    });
+
         // Retrieve our data and plot it
+
         $.getJSON(url, function(data, textstatus) {
-            console.log(data);
             $.each(data, function(i, entry) {
-                var marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(entry.location_1.latitude, 
-                                                    entry.location_1.longitude),
-                    map: map,
-                    title: location.name
+                let address = entry.address_desc;
+                let remove = address.indexOf("To");
+                address = address.slice(0, remove);
+                address = address.replace("Fr", "");
+                let list = address.split(" ");
+                let search = "";
+                for (let i = 0; i < list.length - 1; i ++){
+                    if (list[i] != ""){
+                        if (i == 0 ){
+                            search += list[i];
+                        }
+                        else if ( list[i] == ","){
+                            search += "%26"
+                        }
+                        else{
+                            search += ("%20" + list[i]);
+                        }
+                    }
+                }
+               
+
+                
+
+               
+                //key : AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk
+                fetch(" https://maps.googleapis.com/maps/api/geocode/json?address="  + search + "&key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk") 
+                .then(function(response){
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }
+                return response.json()})
+                .then(function(data){ 
+                    try{
+                    let my_lat= data.results[0].geometry.viewport.northeast.lat;
+                    let long = data.results[0].geometry.viewport.northeast.lng;
+                    let name = data.results[0].formatted_address;
+
+                    my_lat= Number.parseFloat(my_lat);
+                    long = Number.parseFloat(long);
+
+                    let myLatLng = { lat: my_lat, lng: long};
+                    new google.maps.Marker({
+                    position: myLatLng,
+                    map,
+                    title: name,
+                    });
+                    
+                    }
+                    catch (error){
+                        console.error(error);
+                    }
+                })
+                .catch(error => {
+                console.error('Error:', error);
                 });
+
             });
         });
 
