@@ -19,7 +19,7 @@
         .container {
             margin: 20px auto;
             padding: 1.25rem;
-            max-width: 420px;
+            max-width: 400px;
             background-color: #fff;
             border-radius: 30px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -56,7 +56,7 @@
             
         }
         #checkInButton{
-            margin-top: 5px;
+            margin-top: 10px;
             font-size: 15px;
             padding: 10px;
             margin: 9px;
@@ -64,6 +64,8 @@
             background-color: #A2E3C4;
             border-radius: 25px;
             border:3%;
+            margin-left: 100px;
+
             cursor:pointer;
             font-family: "Quicksand", sans-serif;
 
@@ -75,7 +77,7 @@
             font-size: 15px;
             padding: 10px;
             margin: 10px;
-            margin-left: 10px;
+            margin-left: 90px;
             background-color: #A2E3C4;
             border-radius: 25px;
             cursor:pointer;
@@ -83,15 +85,7 @@
 
 
         }
-        #searchInput{
-            padding: 10px;
-            border-radius: 25px;
-            border:1%;
-            font-family: "Quicksand", sans-serif;
 
-
-
-        }
     </style>
     <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -203,8 +197,15 @@
         <div id="map"></div>
         <button id="checkInButton" class="check-in-button">Check Into Parking Lot</button>
         <button id="checkOutButton" class="check-Out-button">Check Out Of Parking Lot</button>
-        <input type="text" id="searchInput" class="search-bar" placeholder="Search for a street...">
-        <ul id="streetList">
+        <!-- <input type="text" id="searchInput" class="search-bar" placeholder="Search for a street..."> -->
+        <div class="locations">
+
+        <div id="streetList">
+            <div id="4 Street SW">
+                Street Name<span class="street-name"></span>: <span class="parking-amount"></span> spots available
+            </div>
+            <!-- Add more streets and parking information as needed -->
+        <!-- <ul id="streetList">
             <li id="4 Street SW">
                 <span class="street-name">4 Street SW</span>: <span class="parking-amount">7</span> spots available
             </li>
@@ -214,8 +215,9 @@
             <li>
                 <span class="street-name">6 Street SW</span>: <span class="parking-amount">8</span> spots available
             </li>
-            <!-- Add more streets and parking information as needed -->
-        </ul>
+            Add more streets and parking information as needed -->
+        <!-- </ul> --> 
+    <!-- </div> -->
     </div>
   <!--  <script>
         // JavaScript for search functionality
