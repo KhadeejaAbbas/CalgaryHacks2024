@@ -73,7 +73,7 @@
 
                     marker.addListener("click", () => {
                             infoWindow.close();
-                            storeAddress(marker);
+                            let availability = storeAddress(marker);
                             infoWindow.setContent("<p>Availability is 5</p>");
                             infoWindow.open(marker.getMap(), marker);
                             });
@@ -99,6 +99,8 @@
         function storeAddress(marker){
             let address = marker.getTitle();
             // call Maheen's function to show address and check in /checkout
+
+            // call Ayesha's function to get availability 
         }
 
         
