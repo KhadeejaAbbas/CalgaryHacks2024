@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>Parking Availability</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-family: "Quicksand", sans-serif;
+
             background-color: #e0dfd5;
         }
         .container {
-            max-width: 800px;
             margin: 20px auto;
-            padding: 20px;
+            padding: 1.25rem;
+            max-width: 420px;
             background-color: #fff;
-            border-radius: 8px;
+            border-radius: 30px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
@@ -35,15 +40,57 @@
         }
         .street-name {
             font-weight: bold;
+            font-family: "Quicksand", sans-serif;
+
         }
         .parking-amount {
             color: #f06543;
+            font-family: "Quicksand", sans-serif;
+
         }
         .search-bar {
             margin-bottom: 20px;
             padding: 10px;
             width: 100%;
             box-sizing: border-box;
+            
+        }
+        #checkInButton{
+            margin-top: 5px;
+            font-size: 15px;
+            padding: 10px;
+            margin: 9px;
+            padding-right: 5px;
+            background-color: #A2E3C4;
+            border-radius: 25px;
+            border:3%;
+            cursor:pointer;
+            font-family: "Quicksand", sans-serif;
+
+
+        }
+        #checkOutButton{
+            border:3%;
+            margin-top: 5px;
+            font-size: 15px;
+            padding: 10px;
+            margin: 10px;
+            margin-left: 10px;
+            background-color: #A2E3C4;
+            border-radius: 25px;
+            cursor:pointer;
+            font-family: "Quicksand", sans-serif;
+
+
+        }
+        #searchInput{
+            padding: 10px;
+            border-radius: 25px;
+            border:1%;
+            font-family: "Quicksand", sans-serif;
+
+
+
         }
     </style>
     <link rel="stylesheet" href="./style.css">
@@ -152,7 +199,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Calgary Parking Availability</h1>
+        <h1>Parking Availability</h1>
         <div id="map"></div>
         <button id="checkInButton" class="check-in-button">Check Into Parking Lot</button>
         <button id="checkOutButton" class="check-Out-button">Check Out Of Parking Lot</button>
