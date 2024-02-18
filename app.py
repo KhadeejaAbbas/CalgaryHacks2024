@@ -13,8 +13,8 @@ app = Flask(__name__)
 @cross_origin()
 def parked_app():
     data = request.json
-    is_failure = str(update_csv_route( data["address-1"], data["address-2"]))
-    return str(is_failure)
+    value = str(decrement( data["column_1"]))
+    return str(value)
 
 @app.route('/availability', methods=['POST'])
 @cross_origin()
@@ -22,6 +22,10 @@ def available_app():
     data = request.json
     available = searchFunctionAddress( data["column_1"], data["column_1"])
     return available
+
+def decrement(value):
+    value = int(value)
+    return value - 1
 
 def decrement_spot(street_name):
     with open('Dataset_for_map_app_divided.csv', 'r', newline='') as file:

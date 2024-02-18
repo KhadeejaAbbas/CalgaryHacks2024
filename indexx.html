@@ -266,7 +266,8 @@
             function setAvailability(column_1, column_2) { 
             fetch('http://127.0.0.1:5000/is-parked', {
                 method: 'POST',
-                body: JSON.stringify({ "column_1": column_1, "column_2": column_2}),
+                //collect only value for now, hard-coded results
+                body: JSON.stringify({ "column_1": column_1,}),
                 headers: {
                 'Content-Type': 'application/json'
                 }
@@ -277,10 +278,9 @@
                     }
                     return response.text()})
                 .then(function(data){ 
-                    //If book is available make the border around the book image green, if not make it red  
-                    if (data == "500"){
-                        console.error("csv failed");
-                    }
+                    let out_address = document.querySelector(".parking-amount");
+                    console.log(data);
+                    out_address.innerHTML = data; 
                     })
                 .catch(error => {
                 console.error('Error:', error);
@@ -288,10 +288,12 @@
             }
 
         checkInButton.addEventListener('click', function() {
-            const Street = document.getElementById('.street-name');
-            let text = Street.textContent;
-            text = text.split(", ");
-            setAvailability(text[0], text[1]);
+            //const Street = document.getElementById('.street-name');
+            let avail = document.getElementById('..parking-amount').innerHTML;
+           // let text = Street.textContent;
+           // text = text.split(", ");
+           // setAvailability(text[0], text[1]);
+           setAvailability(avail, "hi");
         });
         
     </script>
