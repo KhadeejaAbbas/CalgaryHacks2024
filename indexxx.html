@@ -143,8 +143,8 @@
             let out_address = document.querySelector(".parking-amount");
             out_address.style.textContent = address;
             //get available parking spots 
-            addresss = address.split(", ")
-            getAvailability(address[0], address[1])     
+            addresss = address.split(", ");
+            getAvailability(address[0], address[1]);  
         }
 
         function getAvailability(column_1, column_2) { 
@@ -169,6 +169,8 @@
                 console.error('Error:', error);
                 });
             }
+
+                     
             </script>
      <script defer
      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk&callback=initMap">
@@ -190,7 +192,7 @@
     </div>
    <script>
         // JavaScript for search functionality
-        const searchInput = document.getElementById('searchInput');
+      /*  const searchInput = document.getElementById('searchInput');
         const streetList = document.getElementById('streetList').getElementsByTagName('li');
         const checkInButton = document.getElementById('checkInButton');
 
@@ -204,24 +206,39 @@
                     streetList[i].style.display = 'none';
                 }
             }
-        });
-        checkInButton.addEventListener('click', function() {
-            const Street4 = document.getElementById('4 Street SW');
-            if (Street4) {
-                const Street4Parking = Street4.getElementsByClassName('parking-amount')[0];
-                let availableSpots = parseInt(Street4Parking.textContent);
-                if (availableSpots > 0) {
-                    availableSpots--;
-                    Street4Parking.textContent = availableSpots;
-                    alert('You have successfully checked into the parking lot on 4 Street SW!');
+        });*/
 
+        function setAvailability(column_1, column_2) { 
+            fetch('http://127.0.0.1:5000/availability', {
+                method: 'POST',
+                body: JSON.stringify({ "column_1": column_1, "column_2": column_2}),
+                headers: {
+                'Content-Type': 'application/json'
                 }
-                else {
-             // Visual feedback: Display an error message if no spots available
-            alert('Sorry, there are no available spots on 4 Street SW.');
-        }
+                })
+                .then(function(response){
+                    if (!response.ok) {
+                        throw new Error(`HTTP error: ${response.status}`);
+                    }
+                    return response.text()})
+                .then(function(data){ 
+                    //If book is available make the border around the book image green, if not make it red  
+                    if (data == "500"){
+                        console.error("csv failed");
+                    }
+                    })
+                .catch(error => {
+                console.error('Error:', error);
+                });
             }
-        });
+
+        checkInButton.addEventListener('click', function() {
+            const Street = document.getElementById('.street-name');
+            let text = Street.textContent;
+            text = text.split(", ");
+            setAvailability(text[0], text[1]);
+        })
+        ;
     </script>
     <script src="scriptt.js"></script>
 </body>
