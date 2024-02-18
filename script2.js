@@ -1,6 +1,5 @@
 
-
-    let url = "https://data.calgary.ca/resource/rhkg-vwwp.json?status=Active&zone_type=Parking Zone&$$app_token=uyOXQ2JFvkleBIzNmLdEsrCQj";
+let url = "https://data.calgary.ca/resource/rhkg-vwwp.json?status=Active&zone_type=Parking Zone&$$app_token=uyOXQ2JFvkleBIzNmLdEsrCQj";
 
     
     // Intialize our map
