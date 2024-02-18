@@ -20,7 +20,7 @@ def parked_app():
 @cross_origin()
 def available_app():
     data = request.json
-    available = str(searchFunctionAddress( data["column_1"], data["column_1"]))
+    available = searchFunctionAddress( data["column_1"], data["column_1"])
     return available 
 
 def decrement_spot(street_name):
@@ -101,7 +101,8 @@ def searchFunctionAddress(column1_value, column2_value):
     matching_rows = df[(df[column1_name] == column1_value) & (df[column2_name] == column2_value)]
     column_name = "number_of_spots_left"
     result_values = matching_rows[column_name].tolist()
-    return result_values
+    value = ",".join(str(element) for element in result_values)
+    return value
 
 if __name__ == '__main__':
     app.run(debug=True)
