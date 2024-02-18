@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Availability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0dfd5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .street-name {
+            font-weight: bold;
+        }
+        .parking-amount {
+            color: #f06543;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calgary Parking Availability</h1>
+        <button id="checkInButton" class="check-in-button">Check Into Parking Lot</button>
+        <button id="checkOutButton" class="check-Out-button">Check Out Of Parking Lot</button>
+        <input type="text" id="searchInput" class="search-bar" placeholder="Search for a street...">
+        <ul id="streetList">
+            <li id="4 Street SW">
+                <span class="street-name">4 Street SW</span>: <span class="parking-amount">7</span> spots available
+            </li>
+            <li>
+                <span class="street-name">5 Street SW</span>: <span class="parking-amount">2</span> spots available
+            </li>
+            <li>
+                <span class="street-name">6 Street SW</span>: <span class="parking-amount">8</span> spots available
+            </li>
+            <!-- Add more streets and parking information as needed -->
+        </ul>
+    </div>
+    <script>
+        // JavaScript for search functionality
+        const searchInput = document.getElementById('searchInput');
+        const streetList = document.getElementById('streetList').getElementsByTagName('li');
+        const checkInButton = document.getElementById('checkInButton');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            for (let i = 0; i < streetList.length; i++) {
+                const streetName = streetList[i].getElementsByClassName('street-name')[0].innerText.toLowerCase();
+                if (streetName.includes(searchTerm)) {
+                    streetList[i].style.display = '';
+                } else {
+                    streetList[i].style.display = 'none';
+                }
+            }
+        });
+        checkInButton.addEventListener('click', function() {
+            const Street4 = document.getElementById('4 Street SW');
+            if (Street4) {
+                const Street4Parking = Street4.getElementsByClassName('parking-amount')[0];
+                let availableSpots = parseInt(Street4Parking.textContent);
+                if (availableSpots > 0) {
+                    availableSpots--;
+                    Street4Parking.textContent = availableSpots;
+                    alert('You have successfully checked into the parking lot on 4 Street SW!');
+
+                }
+                else {
+             // Visual feedback: Display an error message if no spots available
+            alert('Sorry, there are no available spots on 4 Street SW.');
+        }
+            }
+
+            // Add similar logic for other streets as needed
+        });
+    </script>
+</body>
+</html>
