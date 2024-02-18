@@ -157,9 +157,11 @@
                     }
                     return response.text()})
                 .then(function(data){ 
+                    
                     //If book is available make the border around the book image green, if not make it red  
                     let out_address = document.querySelector(".parking-amount");
-                    out_address.style.textContent = data;
+                    console.log(data);
+                    out_address.innerHTML = data;
                     return value;
                     })
                 .catch(error => {
