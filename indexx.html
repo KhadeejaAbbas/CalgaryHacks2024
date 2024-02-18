@@ -46,10 +46,114 @@
             box-sizing: border-box;
         }
     </style>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> function initMap(){
+        let url = "https://data.calgary.ca/resource/rhkg-vwwp.json?status=Active&zone_type=Parking Zone&$$app_token=uyOXQ2JFvkleBIzNmLdEsrCQj";
+        // Intialize our map
+        var center = new google.maps.LatLng(51.049999, -114.066666);
+        var mapOptions = {
+        zoom: 12,
+        center: center
+        }
+        const map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        const infoWindow = new google.maps.InfoWindow();
+        
+
+        // Retrieve our data and plot it
+
+        $.getJSON(url, function(data, textstatus) {
+            $.each(data, function(i, entry) {
+                let address = entry.address_desc;
+                let remove = address.indexOf("To");
+                address = address.slice(0, remove);
+                address = address.replace("Fr", "");
+                let list = address.split(" ");
+                let search = "";
+                for (let i = 0; i < list.length - 1; i ++){
+                    if (list[i] != ""){
+                        if (i == 0 ){
+                            search += list[i];
+                        }
+                        else if ( list[i] == ","){
+                            search += "%26"
+                        }
+                        else{
+                            search += ("%20" + list[i]);
+                        }
+                    }
+                }
+               
+
+                
+
+                
+
+                //key : AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk
+                fetch(" https://maps.googleapis.com/maps/api/geocode/json?address="  + search + "&key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk") 
+                .then(function(response){
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }
+                return response.json()})
+                .then(function(data){ 
+                    try{
+                    let my_lat= data.results[0].geometry.location.lat;
+                    let long = data.results[0].geometry.location.lng;
+                    let name = data.results[0].formatted_address;
+
+                    my_lat= Number.parseFloat(my_lat);
+                    long = Number.parseFloat(long);
+
+                    let myLatLng = { lat: my_lat, lng: long};
+                    const marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map,
+                    title: address,
+                    });
+
+                    marker.addListener("click", () => {
+                            infoWindow.close();
+                            let availability = storeAddress(marker);
+                            infoWindow.setContent("<p>Availability is 5</p>");
+                            infoWindow.open(marker.getMap(), marker);
+                            });
+
+                    }
+                    catch (error){
+                        console.error(error);
+                    }
+                })
+                .catch(error => {
+                console.error('Error:', error);
+                });
+
+            });
+        });
+
+
+
+            };
+
+        //This function will get the address or lat/long of marker that user clicked on. 
+        //We can collect address or long/lat, search csv, then get availability. 
+        function storeAddress(marker){
+            let address = marker.getTitle();
+            // call Maheen's function to show address and check in /checkout
+
+            // call Ayesha's function to get availability 
+        }
+
+        
+            </script>
+     <script defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSl7RBJxnlHVrRG3FVJDMzAxl5YoSLMUk&callback=initMap">
+   </script>
 </head>
 <body>
     <div class="container">
         <h1>Calgary Parking Availability</h1>
+        <div id="map"></div>
         <button id="checkInButton" class="check-in-button">Check Into Parking Lot</button>
         <button id="checkOutButton" class="check-Out-button">Check Out Of Parking Lot</button>
         <input type="text" id="searchInput" class="search-bar" placeholder="Search for a street...">
