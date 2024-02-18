@@ -20,11 +20,11 @@ def parked_app():
 @cross_origin()
 def available_app():
     data = request.json
-    available = str(searchFunctionAddress( data["address-1"], data["address-2"]))
+    available = str(searchFunctionAddress( data["column_1"], data["column_1"]))
     return available 
 
 def decrement_spot(street_name):
-    with open('parking_data.csv', 'r', newline='') as file:
+    with open('Dataset_for_map_app_divided.csv', 'r', newline='') as file:
         reader = csv.DictReader(file)
         rows = list(reader)
 
@@ -38,6 +38,17 @@ def decrement_spot(street_name):
         writer = csv.DictWriter(file, fieldnames=reader.fieldnames)
         writer.writeheader()
         writer.writerows(rows)
+
+
+def get_spot(street_name):
+    with open('Dataset_for_map_app_divided.csv', 'r', newline='') as file:
+        reader = csv.DictReader(file)
+        rows = list(reader)
+
+    for row in rows:
+        if row['Street'] == street_name:
+            available_spots = int(row['Available Spots'])
+            return available_spots
 
 
 file_url = 'https://raw.githubusercontent.com/KhadeejaAbbas/CalgaryHacks2024/main/Dataset_for_map_app_divided.csv?token=GHSAT0AAAAAACN7XUSWBCKNO6ERCL3JOKJ2ZORXXVQ'  # URL of the CSV file on GitHub
