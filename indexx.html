@@ -165,8 +165,10 @@
                             out_address.innerHTML = address;
                             //get available parking spots 
                             addresss = address.split(", ");
+                            address
                             available = getAvailability(address[0], address[1]); 
-                            infoWindow.setContent(`Available ${available}`);
+                            console.log(address);
+                            infoWindow.setContent(`<p>Available ${5}</p>`);
                             infoWindow.open(marker.getMap(), marker);
                             });
 

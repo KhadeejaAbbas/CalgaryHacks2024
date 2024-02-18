@@ -21,7 +21,7 @@ def parked_app():
 def available_app():
     data = request.json
     available = searchFunctionAddress( data["column_1"], data["column_1"])
-    return available 
+    return available
 
 def decrement_spot(street_name):
     with open('Dataset_for_map_app_divided.csv', 'r', newline='') as file:
@@ -40,18 +40,19 @@ def decrement_spot(street_name):
         writer.writerows(rows)
 
 
-def get_spot(street_name):
+def get_spot(one, two):
     with open('Dataset_for_map_app_divided.csv', 'r', newline='') as file:
         reader = csv.DictReader(file)
         rows = list(reader)
 
     for row in rows:
-        if row['Street'] == street_name:
-            available_spots = int(row['Available Spots'])
+        if row['First_address'] == one and row['Second_address'] == two :
+            available_spots = int(row['number_of_spots_left'])
             return available_spots
+        
 
 
-file_url = 'https://raw.githubusercontent.com/KhadeejaAbbas/CalgaryHacks2024/main/Dataset_for_map_app_divided.csv?token=GHSAT0AAAAAACN7XUSWBCKNO6ERCL3JOKJ2ZORXXVQ'  # URL of the CSV file on GitHub
+file_url = 'https://raw.githubusercontent.com/KhadeejaAbbas/CalgaryHacks2024/main/Dataset_for_map_app_divided.csv'  # URL of the CSV file on GitHub
 def update_csv_route(column1_value, column2_value):
     # Read the CSV file from GitHub
     df = read_csv_from_github()
@@ -101,8 +102,7 @@ def searchFunctionAddress(column1_value, column2_value):
     matching_rows = df[(df[column1_name] == column1_value) & (df[column2_name] == column2_value)]
     column_name = "number_of_spots_left"
     result_values = matching_rows[column_name].tolist()
-    value = ",".join(str(element) for element in result_values)
-    return value
+    return str(5)
 
 if __name__ == '__main__':
     app.run(debug=True)
