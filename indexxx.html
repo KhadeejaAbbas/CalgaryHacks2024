@@ -209,7 +209,7 @@
         });*/
 
         function setAvailability(column_1, column_2) { 
-            fetch('http://127.0.0.1:5000/availability', {
+            fetch('http://127.0.0.1:5000/is-parked', {
                 method: 'POST',
                 body: JSON.stringify({ "column_1": column_1, "column_2": column_2}),
                 headers: {
