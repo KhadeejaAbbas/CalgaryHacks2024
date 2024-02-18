@@ -139,20 +139,18 @@
         //We can collect address or long/lat, search csv, then get availability. 
         function storeAddress(marker){
             let address = marker.getTitle();
-            // call Maheen's function to show address and check in /checkout
+            //set address slected 
+            let out_address = document.querySelector(".parking-amount");
+            out_address.style.textContent = address;
+            //get available parking spots 
             addresss = address.split(", ")
-            result = getAvailability(address[0], address[1])
-            let out_address = document.querySelector(".street-name");
-            
-            out_address.style.textContent = result;
-            
-            // call Ayesha's function to get availability 
+            getAvailability(address[0], address[1])     
         }
 
         function getAvailability(column_1, column_2) { 
-            fetch('http://127.0.0.1:5000/available', {
+            fetch('http://127.0.0.1:5000/availability', {
                 method: 'POST',
-                body: JSON.stringify({ "author": author, "title": title}),
+                body: JSON.stringify({ "column_1": column_1, "column_2": column_2}),
                 headers: {
                 'Content-Type': 'application/json'
                 }
@@ -161,15 +159,11 @@
                     if (!response.ok) {
                         throw new Error(`HTTP error: ${response.status}`);
                     }
-                    return response.json()})
+                    return response.text()})
                 .then(function(data){ 
                     //If book is available make the border around the book image green, if not make it red  
-                    if ( data.available == "1"){
-                        book_image.style.border = "5px solid #377458";
-                    }
-                    else{
-                        book_image.style.border = "5px solid red";
-                    }
+                    let out_address = document.querySelector(".parking-amount");
+                    out_address.style.textContent = data;
                     })
                 .catch(error => {
                 console.error('Error:', error);
